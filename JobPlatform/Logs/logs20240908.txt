@@ -1,0 +1,384 @@
+2024-09-08 18:22:11.300 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-08 18:22:14.743 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-09-08 18:22:14.779 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-09-08 18:22:14.799 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-09-08 18:22:14.827 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-09-08 18:22:15.144 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-09-08 18:22:22.816 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-09-08 18:22:26.503 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 3699.0339ms
+2024-09-08 18:22:26.612 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-09-08 18:22:26.779 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-09-08 18:22:26.783 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 168.587ms
+2024-09-08 18:22:27.029 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 250.9937ms
+2024-09-08 18:22:27.562 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-09-08 18:22:28.299 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 735.894ms
+2024-09-08 18:25:00.790 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/SubscriptionType""" - "application/json" 83
+2024-09-08 18:25:00.897 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)"'
+2024-09-08 18:25:00.946 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"SubscriptionType\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO]] Add(JobPlatform.DTO.SubscriptionType.SubscriptionTypeInsertDTO)" on controller "JobPlatform.Controllers.SubscriptionTypeController" ("JobPlatform").
+2024-09-08 18:25:01.506 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)" in 550.9585ms
+2024-09-08 18:25:01.570 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)"'
+2024-09-08 18:25:01.616 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "POST" "/api/SubscriptionType" responded 500 in 723.5268 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'JobPlatform.Controllers.SubscriptionTypeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-09-08 18:25:01.782 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'JobPlatform.Controllers.SubscriptionTypeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-08 18:25:01.810 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/SubscriptionType""" - 500 null "text/plain; charset=utf-8" 1020.8972ms
+2024-09-08 18:25:40.127 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-08 18:25:40.584 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-09-08 18:25:40.585 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-09-08 18:25:40.589 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-09-08 18:25:40.590 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-09-08 18:25:40.591 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-09-08 18:25:45.780 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-09-08 18:25:46.485 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 714.8511ms
+2024-09-08 18:25:46.505 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-09-08 18:25:46.547 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-09-08 18:25:46.621 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 116.5272ms
+2024-09-08 18:25:46.726 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 178.814ms
+2024-09-08 18:25:46.932 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-09-08 18:25:47.456 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 524.1426ms
+2024-09-08 18:25:55.846 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/SubscriptionType""" - "application/json" 82
+2024-09-08 18:25:55.972 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)"'
+2024-09-08 18:25:56.008 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"SubscriptionType\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO]] Add(JobPlatform.DTO.SubscriptionType.SubscriptionTypeInsertDTO)" on controller "JobPlatform.Controllers.SubscriptionTypeController" ("JobPlatform").
+2024-09-08 18:25:59.223 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("125"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 50), @p3='?' (Precision = 5) (Scale = 2) (DbType = Decimal)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Subscription_Types] ([ALLOWANCE], [DURATION_DAYS], [NAME], [PRICE])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3);"
+2024-09-08 18:25:59.344 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO"'.
+2024-09-08 18:25:59.369 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)" in 3350.0717ms
+2024-09-08 18:25:59.373 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)"'
+2024-09-08 18:25:59.380 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/SubscriptionType" responded 200 in 3409.2462 ms
+2024-09-08 18:25:59.394 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/SubscriptionType""" - 200 null "application/json; charset=utf-8" 3548.1399ms
+2024-09-08 18:26:53.164 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/SubscriptionType""" - "application/json" 118
+2024-09-08 18:26:53.179 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Update (JobPlatform)"'
+2024-09-08 18:26:53.186 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Update\", controller = \"SubscriptionType\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO]] Update(JobPlatform.DTO.SubscriptionType.SubscriptionTypeUpdateDTO)" on controller "JobPlatform.Controllers.SubscriptionTypeController" ("JobPlatform").
+2024-09-08 18:26:53.838 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("22"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[DURATION_DAYS], [s].[NAME], [s].[PRICE]
+FROM [Subscription_Types] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-08 18:26:53.877 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("6"ms) [Parameters=["@p4='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 50), @p3='?' (Precision = 5) (Scale = 2) (DbType = Decimal)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Subscription_Types] SET [ALLOWANCE] = @p0, [DURATION_DAYS] = @p1, [NAME] = @p2, [PRICE] = @p3
+OUTPUT 1
+WHERE [ID] = @p4;"
+2024-09-08 18:26:53.885 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO"'.
+2024-09-08 18:26:53.888 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionTypeController.Update (JobPlatform)" in 699.7337ms
+2024-09-08 18:26:53.889 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Update (JobPlatform)"'
+2024-09-08 18:26:53.891 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/SubscriptionType" responded 200 in 712.7018 ms
+2024-09-08 18:26:53.894 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/SubscriptionType""" - 200 null "application/json; charset=utf-8" 730.4774ms
+2024-09-08 18:27:31.631 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/SubscriptionType""" - "application/json" 102
+2024-09-08 18:27:31.644 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)"'
+2024-09-08 18:27:31.645 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"SubscriptionType\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO]] Add(JobPlatform.DTO.SubscriptionType.SubscriptionTypeInsertDTO)" on controller "JobPlatform.Controllers.SubscriptionTypeController" ("JobPlatform").
+2024-09-08 18:27:31.681 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 50), @p3='?' (Precision = 5) (Scale = 2) (DbType = Decimal)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Subscription_Types] ([ALLOWANCE], [DURATION_DAYS], [NAME], [PRICE])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3);"
+2024-09-08 18:27:31.684 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO"'.
+2024-09-08 18:27:31.687 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)" in 40.2362ms
+2024-09-08 18:27:31.690 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)"'
+2024-09-08 18:27:31.692 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/SubscriptionType" responded 200 in 48.8723 ms
+2024-09-08 18:27:31.694 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/SubscriptionType""" - 200 null "application/json; charset=utf-8" 64.2388ms
+2024-09-08 18:27:52.643 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/SubscriptionType""" - "application/json" 103
+2024-09-08 18:27:52.650 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)"'
+2024-09-08 18:27:52.653 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"SubscriptionType\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO]] Add(JobPlatform.DTO.SubscriptionType.SubscriptionTypeInsertDTO)" on controller "JobPlatform.Controllers.SubscriptionTypeController" ("JobPlatform").
+2024-09-08 18:27:53.080 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Error] Failed executing DbCommand ("419"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 50), @p3='?' (Precision = 5) (Scale = 2) (DbType = Decimal)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Subscription_Types] ([ALLOWANCE], [DURATION_DAYS], [NAME], [PRICE])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3);"
+2024-09-08 18:27:53.494 +03:00 Microsoft.EntityFrameworkCore.Update[Error] An exception occurred in the database while saving changes for context type '"JobPlatform.Data.JobplatformContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Parameter value '10000,00' is out of range.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Parameter value '10000,00' is out of range.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-09-08 18:27:53.782 +03:00 JobPlatform.Controllers.SubscriptionTypeController[Error] An error occurred while saving the entity changes. See the inner exception for details.
+2024-09-08 18:27:53.786 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2024-09-08 18:27:53.808 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)" in 1151.2438ms
+2024-09-08 18:27:53.811 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)"'
+2024-09-08 18:27:53.812 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "POST" "/api/SubscriptionType" responded 500 in 1162.1055 ms
+2024-09-08 18:27:53.816 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/SubscriptionType""" - 500 null "application/problem+json; charset=utf-8" 1176.1894ms
+2024-09-08 18:28:14.939 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/SubscriptionType""" - "application/json" 105
+2024-09-08 18:28:14.950 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)"'
+2024-09-08 18:28:14.951 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"SubscriptionType\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO]] Add(JobPlatform.DTO.SubscriptionType.SubscriptionTypeInsertDTO)" on controller "JobPlatform.Controllers.SubscriptionTypeController" ("JobPlatform").
+2024-09-08 18:28:15.283 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Error] Failed executing DbCommand ("324"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 50), @p3='?' (Precision = 5) (Scale = 2) (DbType = Decimal)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Subscription_Types] ([ALLOWANCE], [DURATION_DAYS], [NAME], [PRICE])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3);"
+2024-09-08 18:28:15.632 +03:00 Microsoft.EntityFrameworkCore.Update[Error] An exception occurred in the database while saving changes for context type '"JobPlatform.Data.JobplatformContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Parameter value '10000,00' is out of range.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Parameter value '10000,00' is out of range.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-09-08 18:28:15.930 +03:00 JobPlatform.Controllers.SubscriptionTypeController[Error] An error occurred while saving the entity changes. See the inner exception for details.
+2024-09-08 18:28:15.932 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2024-09-08 18:28:15.934 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)" in 978.1382ms
+2024-09-08 18:28:15.936 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)"'
+2024-09-08 18:28:15.938 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "POST" "/api/SubscriptionType" responded 500 in 988.2269 ms
+2024-09-08 18:28:15.943 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/SubscriptionType""" - 500 null "application/problem+json; charset=utf-8" 1003.9609ms
+2024-09-08 18:28:42.261 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/SubscriptionType""" - "application/json" 104
+2024-09-08 18:28:42.266 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)"'
+2024-09-08 18:28:42.268 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"SubscriptionType\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO]] Add(JobPlatform.DTO.SubscriptionType.SubscriptionTypeInsertDTO)" on controller "JobPlatform.Controllers.SubscriptionTypeController" ("JobPlatform").
+2024-09-08 18:28:42.596 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Error] Failed executing DbCommand ("314"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 50), @p3='?' (Precision = 5) (Scale = 2) (DbType = Decimal)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Subscription_Types] ([ALLOWANCE], [DURATION_DAYS], [NAME], [PRICE])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3);"
+2024-09-08 18:28:42.951 +03:00 Microsoft.EntityFrameworkCore.Update[Error] An exception occurred in the database while saving changes for context type '"JobPlatform.Data.JobplatformContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Parameter value '1000,00' is out of range.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Parameter value '1000,00' is out of range.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-09-08 18:28:43.237 +03:00 JobPlatform.Controllers.SubscriptionTypeController[Error] An error occurred while saving the entity changes. See the inner exception for details.
+2024-09-08 18:28:43.239 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2024-09-08 18:28:43.242 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)" in 970.9313ms
+2024-09-08 18:28:43.244 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)"'
+2024-09-08 18:28:43.245 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "POST" "/api/SubscriptionType" responded 500 in 979.1664 ms
+2024-09-08 18:28:43.249 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/SubscriptionType""" - 500 null "application/problem+json; charset=utf-8" 988.6948ms
+2024-09-08 18:35:50.843 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-08 18:35:51.182 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-09-08 18:35:51.183 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-09-08 18:35:51.186 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-09-08 18:35:51.187 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-09-08 18:35:51.188 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-09-08 18:35:57.277 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-09-08 18:35:58.309 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-09-08 18:35:58.323 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-09-08 18:35:58.346 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1079.0926ms
+2024-09-08 18:35:58.508 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 198.5016ms
+2024-09-08 18:35:58.614 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 291.2176ms
+2024-09-08 18:35:58.707 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-09-08 18:35:59.240 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 533.2367ms
+2024-09-08 18:36:05.110 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/SubscriptionType""" - "application/json" 104
+2024-09-08 18:36:05.264 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)"'
+2024-09-08 18:36:05.317 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"SubscriptionType\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO]] Add(JobPlatform.DTO.SubscriptionType.SubscriptionTypeInsertDTO)" on controller "JobPlatform.Controllers.SubscriptionTypeController" ("JobPlatform").
+2024-09-08 18:36:08.701 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("112"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 50), @p3='?' (Precision = 8) (Scale = 2) (DbType = Decimal)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Subscription_Types] ([ALLOWANCE], [DURATION_DAYS], [NAME], [PRICE])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3);"
+2024-09-08 18:36:08.809 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO"'.
+2024-09-08 18:36:08.828 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)" in 3502.1539ms
+2024-09-08 18:36:08.830 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Add (JobPlatform)"'
+2024-09-08 18:36:08.834 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/SubscriptionType" responded 200 in 3573.8979 ms
+2024-09-08 18:36:08.850 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/SubscriptionType""" - 200 null "application/json; charset=utf-8" 3740.2544ms
+2024-09-08 18:36:17.731 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/SubscriptionType""" - "application/json" 104
+2024-09-08 18:36:17.741 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionTypeController.GetAll (JobPlatform)"'
+2024-09-08 18:36:17.747 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetAll\", controller = \"SubscriptionType\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO]]] GetAll()" on controller "JobPlatform.Controllers.SubscriptionTypeController" ("JobPlatform").
+2024-09-08 18:36:18.287 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[ALLOWANCE], [s].[DURATION_DAYS], [s].[NAME], [s].[PRICE]
+FROM [Subscription_Types] AS [s]"
+2024-09-08 18:36:18.329 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-08 18:36:18.333 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionTypeController.GetAll (JobPlatform)" in 583.9097ms
+2024-09-08 18:36:18.335 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionTypeController.GetAll (JobPlatform)"'
+2024-09-08 18:36:18.337 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/SubscriptionType" responded 200 in 596.8685 ms
+2024-09-08 18:36:18.340 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/SubscriptionType""" - 200 null "application/json; charset=utf-8" 608.8464ms
+2024-09-08 18:36:24.631 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/SubscriptionType/3""" - "application/json" 104
+2024-09-08 18:36:24.637 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionTypeController.GetById (JobPlatform)"'
+2024-09-08 18:36:24.650 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetById\", controller = \"SubscriptionType\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO]] GetById(Int32)" on controller "JobPlatform.Controllers.SubscriptionTypeController" ("JobPlatform").
+2024-09-08 18:36:24.902 +03:00 JobPlatform.Controllers.SubscriptionTypeController[Error] The key value at position 0 of the call to 'DbSet<SubscriptionType>.Find' was of type 'long', which does not match the property type of 'int'.
+2024-09-08 18:36:24.905 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2024-09-08 18:36:24.922 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionTypeController.GetById (JobPlatform)" in 268.0426ms
+2024-09-08 18:36:24.923 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionTypeController.GetById (JobPlatform)"'
+2024-09-08 18:36:24.924 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "GET" "/api/SubscriptionType/3" responded 500 in 286.9988 ms
+2024-09-08 18:36:24.928 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/SubscriptionType/3""" - 500 null "application/problem+json; charset=utf-8" 296.4859ms
+2024-09-08 18:38:09.507 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-08 18:38:09.878 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-09-08 18:38:10.031 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-09-08 18:38:10.038 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-09-08 18:38:10.040 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-09-08 18:38:10.044 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-09-08 18:38:12.357 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-09-08 18:38:14.614 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 2263.3364ms
+2024-09-08 18:38:14.665 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-09-08 18:38:14.718 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-09-08 18:38:14.841 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 175.7484ms
+2024-09-08 18:38:15.154 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 436.2185ms
+2024-09-08 18:38:15.329 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-09-08 18:38:16.377 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 1047.2168ms
+2024-09-08 18:38:22.142 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/SubscriptionType/3""" - "application/json" 104
+2024-09-08 18:38:22.283 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionTypeController.GetById (JobPlatform)"'
+2024-09-08 18:38:22.323 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetById\", controller = \"SubscriptionType\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO]] GetById(Int32)" on controller "JobPlatform.Controllers.SubscriptionTypeController" ("JobPlatform").
+2024-09-08 18:38:25.783 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("202"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[DURATION_DAYS], [s].[NAME], [s].[PRICE]
+FROM [Subscription_Types] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-08 18:38:25.952 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.SubscriptionType.SubscriptionTypeViewDTO"'.
+2024-09-08 18:38:25.981 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionTypeController.GetById (JobPlatform)" in 3647.1613ms
+2024-09-08 18:38:25.986 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionTypeController.GetById (JobPlatform)"'
+2024-09-08 18:38:25.994 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/SubscriptionType/3" responded 200 in 3713.3730 ms
+2024-09-08 18:38:26.015 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/SubscriptionType/3""" - 200 null "application/json; charset=utf-8" 3872.6874ms
+2024-09-08 18:38:32.481 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "DELETE" "https"://"localhost:7044""""/api/SubscriptionType/3""" - "application/json" 104
+2024-09-08 18:38:32.490 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Delete (JobPlatform)"'
+2024-09-08 18:38:32.507 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Delete\", controller = \"SubscriptionType\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] Delete(Int32)" on controller "JobPlatform.Controllers.SubscriptionTypeController" ("JobPlatform").
+2024-09-08 18:38:32.659 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("6"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[DURATION_DAYS], [s].[NAME], [s].[PRICE]
+FROM [Subscription_Types] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-08 18:38:32.845 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("11"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Subscription_Types]
+OUTPUT 1
+WHERE [ID] = @p0;"
+2024-09-08 18:38:32.879 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Boolean"'.
+2024-09-08 18:38:32.888 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionTypeController.Delete (JobPlatform)" in 375.8641ms
+2024-09-08 18:38:32.890 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionTypeController.Delete (JobPlatform)"'
+2024-09-08 18:38:32.894 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "DELETE" "/api/SubscriptionType/3" responded 200 in 404.5893 ms
+2024-09-08 18:38:32.897 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "DELETE" "https"://"localhost:7044""""/api/SubscriptionType/3""" - 200 null "application/json; charset=utf-8" 416.6137ms

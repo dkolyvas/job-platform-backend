@@ -1,0 +1,246 @@
+2024-09-02 17:28:33.853 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-02 17:28:34.225 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-09-02 17:28:34.226 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-09-02 17:28:34.229 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-09-02 17:28:34.231 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-09-02 17:28:34.232 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-09-02 17:28:40.447 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-09-02 17:28:41.016 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 579.6199ms
+2024-09-02 17:28:42.635 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-09-02 17:28:42.646 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 11.3089ms
+2024-09-02 17:28:42.656 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-09-02 17:28:42.757 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 101.6809ms
+2024-09-02 17:28:42.802 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-09-02 17:28:43.103 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 300.9485ms
+2024-09-02 17:29:00.726 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant/2""" - "application/json" 1710
+2024-09-02 17:29:00.806 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.ApplicantController.GetById (JobPlatform)"'
+2024-09-02 17:29:00.832 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetById\", controller = \"Applicant\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Applicant.ApplicantViewExtendedDTO]] GetById(Int64)" on controller "JobPlatform.Controllers.ApplicantController" ("JobPlatform").
+2024-09-02 17:29:02.663 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("71"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Applicants] AS [a]
+WHERE [a].[ID] = @__p_0"
+2024-09-02 17:29:02.855 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("9"ms) [Parameters=["@__applicantId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[APPLICANT_ID], [a].[DATE_FROM], [a].[DATE_TO], [a].[DESCRIPTION], [a].[DURATION_MONTHS], [a].[INSTITUTION], [a].[SKILL_LEVEL_ID], [a].[SKILL_SUBCATEGORY_ID], [s].[ID], [s].[CHECKED], [s].[NAME], [s].[SKILL_CATEGORY_ID], [s0].[ID], [s0].[CHECKED], [s0].[NAME], [s0].[SORT], [s1].[ID], [s1].[GRADE], [s1].[NAME], [s1].[SKILL_CATEGORY_ID], [s1].[SKILL_SORT], [s1].[SKILL_SUBCATEGORY_ID]
+FROM [Applicant_Skills] AS [a]
+INNER JOIN [Skill_Subcategories] AS [s] ON [a].[SKILL_SUBCATEGORY_ID] = [s].[ID]
+INNER JOIN [Skill_Categories] AS [s0] ON [s].[SKILL_CATEGORY_ID] = [s0].[ID]
+LEFT JOIN [Skill_Levels] AS [s1] ON [a].[SKILL_LEVEL_ID] = [s1].[ID]
+WHERE [a].[APPLICANT_ID] = @__applicantId_0"
+2024-09-02 17:29:02.963 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@__applicantId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[APPLICANT_ID], [a].[NAME]
+FROM [Applicant_Merits] AS [a]
+WHERE [a].[APPLICANT_ID] = @__applicantId_0"
+2024-09-02 17:29:02.999 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Applicant.ApplicantViewExtendedDTO"'.
+2024-09-02 17:29:03.033 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.ApplicantController.GetById (JobPlatform)" in 2196.3071ms
+2024-09-02 17:29:03.034 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.ApplicantController.GetById (JobPlatform)"'
+2024-09-02 17:29:03.038 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Applicant/2" responded 200 in 2233.3691 ms
+2024-09-02 17:29:03.047 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant/2""" - 200 null "application/json; charset=utf-8" 2320.3547ms
+2024-09-02 17:29:15.262 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant/1""" - "application/json" 1710
+2024-09-02 17:29:15.268 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.ApplicantController.GetById (JobPlatform)"'
+2024-09-02 17:29:15.270 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetById\", controller = \"Applicant\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Applicant.ApplicantViewExtendedDTO]] GetById(Int64)" on controller "JobPlatform.Controllers.ApplicantController" ("JobPlatform").
+2024-09-02 17:29:15.328 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Applicants] AS [a]
+WHERE [a].[ID] = @__p_0"
+2024-09-02 17:29:15.332 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("1"ms) [Parameters=["@__applicantId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[APPLICANT_ID], [a].[DATE_FROM], [a].[DATE_TO], [a].[DESCRIPTION], [a].[DURATION_MONTHS], [a].[INSTITUTION], [a].[SKILL_LEVEL_ID], [a].[SKILL_SUBCATEGORY_ID], [s].[ID], [s].[CHECKED], [s].[NAME], [s].[SKILL_CATEGORY_ID], [s0].[ID], [s0].[CHECKED], [s0].[NAME], [s0].[SORT], [s1].[ID], [s1].[GRADE], [s1].[NAME], [s1].[SKILL_CATEGORY_ID], [s1].[SKILL_SORT], [s1].[SKILL_SUBCATEGORY_ID]
+FROM [Applicant_Skills] AS [a]
+INNER JOIN [Skill_Subcategories] AS [s] ON [a].[SKILL_SUBCATEGORY_ID] = [s].[ID]
+INNER JOIN [Skill_Categories] AS [s0] ON [s].[SKILL_CATEGORY_ID] = [s0].[ID]
+LEFT JOIN [Skill_Levels] AS [s1] ON [a].[SKILL_LEVEL_ID] = [s1].[ID]
+WHERE [a].[APPLICANT_ID] = @__applicantId_0"
+2024-09-02 17:29:15.337 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("1"ms) [Parameters=["@__applicantId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[APPLICANT_ID], [a].[NAME]
+FROM [Applicant_Merits] AS [a]
+WHERE [a].[APPLICANT_ID] = @__applicantId_0"
+2024-09-02 17:29:15.342 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Applicant.ApplicantViewExtendedDTO"'.
+2024-09-02 17:29:15.344 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.ApplicantController.GetById (JobPlatform)" in 71.1297ms
+2024-09-02 17:29:15.345 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.ApplicantController.GetById (JobPlatform)"'
+2024-09-02 17:29:15.346 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Applicant/1" responded 200 in 77.7697 ms
+2024-09-02 17:29:15.348 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant/1""" - 200 null "application/json; charset=utf-8" 85.7508ms
+2024-09-02 17:29:44.745 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant/2""" - "application/json" 1710
+2024-09-02 17:29:44.748 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.ApplicantController.GetById (JobPlatform)"'
+2024-09-02 17:29:44.749 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetById\", controller = \"Applicant\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Applicant.ApplicantViewExtendedDTO]] GetById(Int64)" on controller "JobPlatform.Controllers.ApplicantController" ("JobPlatform").
+2024-09-02 17:29:44.771 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Applicants] AS [a]
+WHERE [a].[ID] = @__p_0"
+2024-09-02 17:29:44.780 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("1"ms) [Parameters=["@__applicantId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[APPLICANT_ID], [a].[DATE_FROM], [a].[DATE_TO], [a].[DESCRIPTION], [a].[DURATION_MONTHS], [a].[INSTITUTION], [a].[SKILL_LEVEL_ID], [a].[SKILL_SUBCATEGORY_ID], [s].[ID], [s].[CHECKED], [s].[NAME], [s].[SKILL_CATEGORY_ID], [s0].[ID], [s0].[CHECKED], [s0].[NAME], [s0].[SORT], [s1].[ID], [s1].[GRADE], [s1].[NAME], [s1].[SKILL_CATEGORY_ID], [s1].[SKILL_SORT], [s1].[SKILL_SUBCATEGORY_ID]
+FROM [Applicant_Skills] AS [a]
+INNER JOIN [Skill_Subcategories] AS [s] ON [a].[SKILL_SUBCATEGORY_ID] = [s].[ID]
+INNER JOIN [Skill_Categories] AS [s0] ON [s].[SKILL_CATEGORY_ID] = [s0].[ID]
+LEFT JOIN [Skill_Levels] AS [s1] ON [a].[SKILL_LEVEL_ID] = [s1].[ID]
+WHERE [a].[APPLICANT_ID] = @__applicantId_0"
+2024-09-02 17:29:44.785 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("1"ms) [Parameters=["@__applicantId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[APPLICANT_ID], [a].[NAME]
+FROM [Applicant_Merits] AS [a]
+WHERE [a].[APPLICANT_ID] = @__applicantId_0"
+2024-09-02 17:29:44.788 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Applicant.ApplicantViewExtendedDTO"'.
+2024-09-02 17:29:44.790 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.ApplicantController.GetById (JobPlatform)" in 38.1527ms
+2024-09-02 17:29:44.792 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.ApplicantController.GetById (JobPlatform)"'
+2024-09-02 17:29:44.793 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Applicant/2" responded 200 in 44.8504 ms
+2024-09-02 17:29:44.795 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant/2""" - 200 null "application/json; charset=utf-8" 50.469ms
+2024-09-02 17:30:51.280 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant""?name=%CE%9A" - "application/json" 1710
+2024-09-02 17:30:51.302 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.ApplicantController.GetApplicants (JobPlatform)"'
+2024-09-02 17:30:51.308 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetApplicants\", controller = \"Applicant\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.Applicant.ApplicantViewDTO]]] GetApplicants(System.String, System.String, System.String)" on controller "JobPlatform.Controllers.ApplicantController" ("JobPlatform").
+2024-09-02 17:30:51.327 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Applicants] AS [a]"
+2024-09-02 17:30:51.334 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JobPlatform.DTO.Applicant.ApplicantViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-02 17:30:51.337 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.ApplicantController.GetApplicants (JobPlatform)" in 27.5885ms
+2024-09-02 17:30:51.338 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.ApplicantController.GetApplicants (JobPlatform)"'
+2024-09-02 17:30:51.339 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Applicant" responded 200 in 37.2103 ms
+2024-09-02 17:30:51.341 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant""?name=%CE%9A" - 200 null "application/json; charset=utf-8" 61.5578ms
+2024-09-02 17:31:45.739 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant""?lastname=%CE%9A" - "application/json" 1710
+2024-09-02 17:31:45.744 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.ApplicantController.GetApplicants (JobPlatform)"'
+2024-09-02 17:31:45.746 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetApplicants\", controller = \"Applicant\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.Applicant.ApplicantViewDTO]]] GetApplicants(System.String, System.String, System.String)" on controller "JobPlatform.Controllers.ApplicantController" ("JobPlatform").
+2024-09-02 17:31:45.774 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("11"ms) [Parameters=["@__lastname_0_startswith='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Applicants] AS [a]
+WHERE [a].[LASTNAME] LIKE @__lastname_0_startswith ESCAPE N'\'"
+2024-09-02 17:31:45.777 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JobPlatform.DTO.Applicant.ApplicantViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-02 17:31:45.780 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.ApplicantController.GetApplicants (JobPlatform)" in 30.9204ms
+2024-09-02 17:31:45.787 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.ApplicantController.GetApplicants (JobPlatform)"'
+2024-09-02 17:31:45.787 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Applicant" responded 200 in 43.1590 ms
+2024-09-02 17:31:45.789 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant""?lastname=%CE%9A" - 200 null "application/json; charset=utf-8" 53.4831ms
+2024-09-02 17:32:05.329 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant""?firstname=%CE%93%CE%B5" - "application/json" 1710
+2024-09-02 17:32:05.333 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.ApplicantController.GetApplicants (JobPlatform)"'
+2024-09-02 17:32:05.334 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetApplicants\", controller = \"Applicant\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.Applicant.ApplicantViewDTO]]] GetApplicants(System.String, System.String, System.String)" on controller "JobPlatform.Controllers.ApplicantController" ("JobPlatform").
+2024-09-02 17:32:05.348 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("7"ms) [Parameters=["@__firstname_0_startswith='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Applicants] AS [a]
+WHERE [a].[FIRSTNAME] LIKE @__firstname_0_startswith ESCAPE N'\'"
+2024-09-02 17:32:05.351 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JobPlatform.DTO.Applicant.ApplicantViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-02 17:32:05.352 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.ApplicantController.GetApplicants (JobPlatform)" in 16.3627ms
+2024-09-02 17:32:05.354 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.ApplicantController.GetApplicants (JobPlatform)"'
+2024-09-02 17:32:05.355 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Applicant" responded 200 in 21.8256 ms
+2024-09-02 17:32:05.359 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant""?firstname=%CE%93%CE%B5" - 200 null "application/json; charset=utf-8" 30.0805ms
+2024-09-02 17:32:24.077 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant""?email=kolyvas@gmail.com" - "application/json" 1710
+2024-09-02 17:32:24.080 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.ApplicantController.GetApplicants (JobPlatform)"'
+2024-09-02 17:32:24.082 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetApplicants\", controller = \"Applicant\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.Applicant.ApplicantViewDTO]]] GetApplicants(System.String, System.String, System.String)" on controller "JobPlatform.Controllers.ApplicantController" ("JobPlatform").
+2024-09-02 17:32:24.097 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("9"ms) [Parameters=["@__email_0='?' (Size = 70)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Applicants] AS [a]
+WHERE [a].[EMAIL] = @__email_0"
+2024-09-02 17:32:24.100 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JobPlatform.DTO.Applicant.ApplicantViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-02 17:32:24.101 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.ApplicantController.GetApplicants (JobPlatform)" in 16.8888ms
+2024-09-02 17:32:24.102 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.ApplicantController.GetApplicants (JobPlatform)"'
+2024-09-02 17:32:24.103 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Applicant" responded 200 in 22.5737 ms
+2024-09-02 17:32:24.105 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant""?email=kolyvas@gmail.com" - 200 null "application/json; charset=utf-8" 28.0092ms
+2024-09-02 17:34:14.492 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/applicant/register""" - "application/json" 142
+2024-09-02 17:34:14.519 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.RegisterApplicantUser (JobPlatform)"'
+2024-09-02 17:34:14.525 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"RegisterApplicantUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] RegisterApplicantUser(JobPlatform.DTO.User.UserRegisterDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-09-02 17:34:14.575 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("11"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[RESTORE_CODE], [u].[ROLE], [u].[UNAUTHORIZED_COUNT], [u].[USERNAME], [b].[ID], [b].[ADDRESS], [b].[EMAIL], [b].[IMAGE], [b].[NAME], [b].[PHONE], [b].[USER_ID], [b].[WEBSITE], [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Users] AS [u]
+LEFT JOIN [Businesses] AS [b] ON [u].[ID] = [b].[USER_ID]
+LEFT JOIN [Applicants] AS [a] ON [u].[ID] = [a].[USER_ID]
+WHERE [u].[USERNAME] = @__username_0"
+2024-09-02 17:34:15.081 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 100), @p1='?' (Size = 255), @p2='?' (Size = 50), @p3='?' (Size = 12), @p4='?' (DbType = Int32), @p5='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([EMAIL], [PASSWORD], [RESTORE_CODE], [ROLE], [UNAUTHORIZED_COUNT], [USERNAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);"
+2024-09-02 17:34:15.117 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2024-09-02 17:34:15.121 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.RegisterApplicantUser (JobPlatform)" in 594.1854ms
+2024-09-02 17:34:15.122 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.RegisterApplicantUser (JobPlatform)"'
+2024-09-02 17:34:15.123 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/applicant/register" responded 200 in 604.3822 ms
+2024-09-02 17:34:15.125 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/applicant/register""" - 200 null "application/json; charset=utf-8" 634.3852ms
+2024-09-02 17:45:29.130 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Applicant/applicant/""" - "application/json" 1173
+2024-09-02 17:45:29.154 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.ApplicantController.InsertCurrentApplicant (JobPlatform)"'
+2024-09-02 17:45:29.160 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"InsertCurrentApplicant\", controller = \"Applicant\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Applicant.ApplicantViewExtendedDTO]] InsertCurrentApplicant(JobPlatform.DTO.Applicant.ApplicantInsertDTO)" on controller "JobPlatform.Controllers.ApplicantController" ("JobPlatform").
+2024-09-02 17:45:29.216 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("6"ms) [Parameters=["@__userId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Applicants] AS [a]
+WHERE [a].[USER_ID] = @__userId_0"
+2024-09-02 17:45:29.250 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 70), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 20), @p6='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Applicants] ([ADDRESS], [CV], [EMAIL], [FIRSTNAME], [LASTNAME], [PHONE], [USER_ID])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);"
+2024-09-02 17:45:29.336 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("26"ms) [Parameters=["@p0='?' (DbType = Int64), @p1='?' (Size = 50), @p2='?' (DbType = Int64), @p3='?' (Size = 50), @p4='?' (DbType = Int64), @p5='?' (DbType = Date), @p6='?' (DbType = Date), @p7='?' (Size = 255), @p8='?' (DbType = Int32), @p9='?' (Size = 100), @p10='?' (DbType = Int32), @p11='?' (DbType = Int64), @p12='?' (DbType = Int64), @p13='?' (DbType = Date), @p14='?' (DbType = Date), @p15='?' (Size = 255), @p16='?' (DbType = Int32), @p17='?' (Size = 100), @p18='?' (DbType = Int32), @p19='?' (DbType = Int64), @p20='?' (DbType = Int64), @p21='?' (DbType = Date), @p22='?' (DbType = Date), @p23='?' (Size = 255), @p24='?' (DbType = Int32), @p25='?' (Size = 100), @p26='?' (DbType = Int32), @p27='?' (DbType = Int64), @p28='?' (DbType = Int64), @p29='?' (DbType = Date), @p30='?' (DbType = Date), @p31='?' (Size = 255), @p32='?' (DbType = Int32), @p33='?' (Size = 100), @p34='?' (DbType = Int32), @p35='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+MERGE [Applicant_Merits] USING (
+VALUES (@p0, @p1, 0),
+(@p2, @p3, 1)) AS i ([APPLICANT_ID], [NAME], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([APPLICANT_ID], [NAME])
+VALUES (i.[APPLICANT_ID], i.[NAME])
+OUTPUT INSERTED.[ID], i._Position;
+MERGE [Applicant_Skills] USING (
+VALUES (@p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, 0),
+(@p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, 1),
+(@p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, 2),
+(@p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35, 3)) AS i ([APPLICANT_ID], [DATE_FROM], [DATE_TO], [DESCRIPTION], [DURATION_MONTHS], [INSTITUTION], [SKILL_LEVEL_ID], [SKILL_SUBCATEGORY_ID], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([APPLICANT_ID], [DATE_FROM], [DATE_TO], [DESCRIPTION], [DURATION_MONTHS], [INSTITUTION], [SKILL_LEVEL_ID], [SKILL_SUBCATEGORY_ID])
+VALUES (i.[APPLICANT_ID], i.[DATE_FROM], i.[DATE_TO], i.[DESCRIPTION], i.[DURATION_MONTHS], i.[INSTITUTION], i.[SKILL_LEVEL_ID], i.[SKILL_SUBCATEGORY_ID])
+OUTPUT INSERTED.[ID], i._Position;"
+2024-09-02 17:45:29.360 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Applicant.ApplicantViewExtendedDTO"'.
+2024-09-02 17:45:29.362 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.ApplicantController.InsertCurrentApplicant (JobPlatform)" in 199.1664ms
+2024-09-02 17:45:29.363 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.ApplicantController.InsertCurrentApplicant (JobPlatform)"'
+2024-09-02 17:45:29.364 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Applicant/applicant/" responded 200 in 210.0432 ms
+2024-09-02 17:45:29.365 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Applicant/applicant/""" - 200 null "application/json; charset=utf-8" 235.2268ms
+2024-09-02 17:45:58.962 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant/3""" - "application/json" 1173
+2024-09-02 17:45:58.968 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.ApplicantController.GetById (JobPlatform)"'
+2024-09-02 17:45:58.969 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetById\", controller = \"Applicant\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Applicant.ApplicantViewExtendedDTO]] GetById(Int64)" on controller "JobPlatform.Controllers.ApplicantController" ("JobPlatform").
+2024-09-02 17:45:58.977 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Applicants] AS [a]
+WHERE [a].[ID] = @__p_0"
+2024-09-02 17:45:58.991 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("7"ms) [Parameters=["@__applicantId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[APPLICANT_ID], [a].[DATE_FROM], [a].[DATE_TO], [a].[DESCRIPTION], [a].[DURATION_MONTHS], [a].[INSTITUTION], [a].[SKILL_LEVEL_ID], [a].[SKILL_SUBCATEGORY_ID], [s].[ID], [s].[CHECKED], [s].[NAME], [s].[SKILL_CATEGORY_ID], [s0].[ID], [s0].[CHECKED], [s0].[NAME], [s0].[SORT], [s1].[ID], [s1].[GRADE], [s1].[NAME], [s1].[SKILL_CATEGORY_ID], [s1].[SKILL_SORT], [s1].[SKILL_SUBCATEGORY_ID]
+FROM [Applicant_Skills] AS [a]
+INNER JOIN [Skill_Subcategories] AS [s] ON [a].[SKILL_SUBCATEGORY_ID] = [s].[ID]
+INNER JOIN [Skill_Categories] AS [s0] ON [s].[SKILL_CATEGORY_ID] = [s0].[ID]
+LEFT JOIN [Skill_Levels] AS [s1] ON [a].[SKILL_LEVEL_ID] = [s1].[ID]
+WHERE [a].[APPLICANT_ID] = @__applicantId_0"
+2024-09-02 17:45:58.995 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("2"ms) [Parameters=["@__applicantId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[APPLICANT_ID], [a].[NAME]
+FROM [Applicant_Merits] AS [a]
+WHERE [a].[APPLICANT_ID] = @__applicantId_0"
+2024-09-02 17:45:58.997 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Applicant.ApplicantViewExtendedDTO"'.
+2024-09-02 17:45:58.998 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.ApplicantController.GetById (JobPlatform)" in 26.8885ms
+2024-09-02 17:45:58.999 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.ApplicantController.GetById (JobPlatform)"'
+2024-09-02 17:45:59.000 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Applicant/3" responded 200 in 32.0316 ms
+2024-09-02 17:45:59.002 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant/3""" - 200 null "application/json; charset=utf-8" 41.1478ms
+2024-09-02 17:47:19.398 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/login""" - "application/json" 76
+2024-09-02 17:47:19.466 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.Login (JobPlatform)"'
+2024-09-02 17:47:19.471 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPlatform.DTO.User.UserLoginDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-09-02 17:47:19.496 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("14"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[RESTORE_CODE], [u].[ROLE], [u].[UNAUTHORIZED_COUNT], [u].[USERNAME], [b].[ID], [b].[ADDRESS], [b].[EMAIL], [b].[IMAGE], [b].[NAME], [b].[PHONE], [b].[USER_ID], [b].[WEBSITE], [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Users] AS [u]
+LEFT JOIN [Businesses] AS [b] ON [u].[ID] = [b].[USER_ID]
+LEFT JOIN [Applicants] AS [a] ON [u].[ID] = [a].[USER_ID]
+WHERE [u].[USERNAME] = @__username_0"
+2024-09-02 17:47:19.688 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2024-09-02 17:47:19.691 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.Login (JobPlatform)" in 216.1993ms
+2024-09-02 17:47:19.692 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.Login (JobPlatform)"'
+2024-09-02 17:47:19.694 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/login" responded 200 in 227.5588 ms
+2024-09-02 17:47:19.697 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/login""" - 200 null "application/json; charset=utf-8" 298.176ms
+2024-09-02 17:47:59.470 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant/applicant/""" - "application/json" 1173
+2024-09-02 17:47:59.475 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.ApplicantController.GetCurrentApplicant (JobPlatform)"'
+2024-09-02 17:47:59.480 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetCurrentApplicant\", controller = \"Applicant\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Applicant.ApplicantViewExtendedDTO]] GetCurrentApplicant()" on controller "JobPlatform.Controllers.ApplicantController" ("JobPlatform").
+2024-09-02 17:47:59.489 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Applicants] AS [a]
+WHERE [a].[ID] = @__p_0"
+2024-09-02 17:47:59.504 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("6"ms) [Parameters=["@__applicantId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[APPLICANT_ID], [a].[DATE_FROM], [a].[DATE_TO], [a].[DESCRIPTION], [a].[DURATION_MONTHS], [a].[INSTITUTION], [a].[SKILL_LEVEL_ID], [a].[SKILL_SUBCATEGORY_ID], [s].[ID], [s].[CHECKED], [s].[NAME], [s].[SKILL_CATEGORY_ID], [s0].[ID], [s0].[CHECKED], [s0].[NAME], [s0].[SORT], [s1].[ID], [s1].[GRADE], [s1].[NAME], [s1].[SKILL_CATEGORY_ID], [s1].[SKILL_SORT], [s1].[SKILL_SUBCATEGORY_ID]
+FROM [Applicant_Skills] AS [a]
+INNER JOIN [Skill_Subcategories] AS [s] ON [a].[SKILL_SUBCATEGORY_ID] = [s].[ID]
+INNER JOIN [Skill_Categories] AS [s0] ON [s].[SKILL_CATEGORY_ID] = [s0].[ID]
+LEFT JOIN [Skill_Levels] AS [s1] ON [a].[SKILL_LEVEL_ID] = [s1].[ID]
+WHERE [a].[APPLICANT_ID] = @__applicantId_0"
+2024-09-02 17:47:59.509 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@__applicantId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ID], [a].[APPLICANT_ID], [a].[NAME]
+FROM [Applicant_Merits] AS [a]
+WHERE [a].[APPLICANT_ID] = @__applicantId_0"
+2024-09-02 17:47:59.512 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Applicant.ApplicantViewExtendedDTO"'.
+2024-09-02 17:47:59.513 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.ApplicantController.GetCurrentApplicant (JobPlatform)" in 31.2616ms
+2024-09-02 17:47:59.514 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.ApplicantController.GetCurrentApplicant (JobPlatform)"'
+2024-09-02 17:47:59.515 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Applicant/applicant/" responded 200 in 39.4427 ms
+2024-09-02 17:47:59.516 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Applicant/applicant/""" - 200 null "application/json; charset=utf-8" 48.3582ms

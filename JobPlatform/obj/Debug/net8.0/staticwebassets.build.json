@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "X/ifRDsYFIbk40jvmeE1oEGFgWWU42SnGkrrvKT1OW0=",
+  "Source": "JobPlatform",
+  "BasePath": "_content/JobPlatform",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "JobPlatform\\wwwroot",
+      "Source": "JobPlatform",
+      "ContentRoot": "C:\\Users\\kolyv\\source\\repos\\JobPlatform\\JobPlatform\\wwwroot\\",
+      "BasePath": "_content/JobPlatform",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

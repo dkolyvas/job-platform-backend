@@ -1,0 +1,1243 @@
+2024-09-09 17:09:40.730 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-09 17:09:41.196 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-09-09 17:09:41.200 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-09-09 17:09:41.202 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-09-09 17:09:41.204 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-09-09 17:09:41.204 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-09-09 17:09:47.604 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-09-09 17:09:48.195 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 599.1855ms
+2024-09-09 17:09:48.293 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-09-09 17:09:48.422 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 128.5683ms
+2024-09-09 17:09:48.427 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-09-09 17:09:49.089 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 662.2037ms
+2024-09-09 17:09:49.122 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-09-09 17:09:49.596 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 474.0142ms
+2024-09-09 17:10:57.147 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - "application/json" 41
+2024-09-09 17:10:57.234 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:10:57.265 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"Region\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Region.RegionViewDTO]] Add(JobPlatform.DTO.Region.RegionInsertDTO)" on controller "JobPlatform.Controllers.RegionController" ("JobPlatform").
+2024-09-09 17:10:59.336 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("70"ms) [Parameters=["@p0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Regions] ([NAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0);"
+2024-09-09 17:10:59.403 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Region.RegionViewDTO"'.
+2024-09-09 17:10:59.417 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.RegionController.Add (JobPlatform)" in 2145.2134ms
+2024-09-09 17:10:59.419 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:10:59.423 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Region" responded 200 in 2192.9854 ms
+2024-09-09 17:10:59.437 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - 200 null "application/json; charset=utf-8" 2289.3773ms
+2024-09-09 17:11:11.086 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - "application/json" 39
+2024-09-09 17:11:11.091 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:11:11.092 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"Region\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Region.RegionViewDTO]] Add(JobPlatform.DTO.Region.RegionInsertDTO)" on controller "JobPlatform.Controllers.RegionController" ("JobPlatform").
+2024-09-09 17:11:11.160 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Regions] ([NAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0);"
+2024-09-09 17:11:11.166 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Region.RegionViewDTO"'.
+2024-09-09 17:11:11.167 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.RegionController.Add (JobPlatform)" in 74.2782ms
+2024-09-09 17:11:11.169 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:11:11.170 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Region" responded 200 in 79.6097 ms
+2024-09-09 17:11:11.172 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - 200 null "application/json; charset=utf-8" 86.5176ms
+2024-09-09 17:11:19.604 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - "application/json" 39
+2024-09-09 17:11:19.609 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:11:19.611 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"Region\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Region.RegionViewDTO]] Add(JobPlatform.DTO.Region.RegionInsertDTO)" on controller "JobPlatform.Controllers.RegionController" ("JobPlatform").
+2024-09-09 17:11:19.630 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Regions] ([NAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0);"
+2024-09-09 17:11:19.640 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Region.RegionViewDTO"'.
+2024-09-09 17:11:19.642 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.RegionController.Add (JobPlatform)" in 28.0135ms
+2024-09-09 17:11:19.642 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:11:19.643 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Region" responded 200 in 33.8447 ms
+2024-09-09 17:11:19.644 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - 200 null "application/json; charset=utf-8" 40.1718ms
+2024-09-09 17:11:46.785 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Region""" - "application/json" 65
+2024-09-09 17:11:46.793 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.RegionController.Update (JobPlatform)"'
+2024-09-09 17:11:46.801 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Update\", controller = \"Region\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Region.RegionViewDTO]] Update(JobPlatform.DTO.Region.RegionUpdateDTO)" on controller "JobPlatform.Controllers.RegionController" ("JobPlatform").
+2024-09-09 17:11:47.160 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("8"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[ID], [r].[NAME]
+FROM [Regions] AS [r]
+WHERE [r].[ID] = @__p_0"
+2024-09-09 17:11:47.188 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Regions] SET [NAME] = @p0
+OUTPUT 1
+WHERE [ID] = @p1;"
+2024-09-09 17:11:47.191 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Region.RegionViewDTO"'.
+2024-09-09 17:11:47.194 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.RegionController.Update (JobPlatform)" in 390.8108ms
+2024-09-09 17:11:47.196 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.RegionController.Update (JobPlatform)"'
+2024-09-09 17:11:47.197 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/Region" responded 200 in 404.4254 ms
+2024-09-09 17:11:47.200 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Region""" - 200 null "application/json; charset=utf-8" 415.6497ms
+2024-09-09 17:12:10.846 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - "application/json" 44
+2024-09-09 17:12:10.850 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:12:10.851 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"Region\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Region.RegionViewDTO]] Add(JobPlatform.DTO.Region.RegionInsertDTO)" on controller "JobPlatform.Controllers.RegionController" ("JobPlatform").
+2024-09-09 17:12:10.863 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Regions] ([NAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0);"
+2024-09-09 17:12:10.865 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Region.RegionViewDTO"'.
+2024-09-09 17:12:10.867 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.RegionController.Add (JobPlatform)" in 14.0207ms
+2024-09-09 17:12:10.868 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:12:10.869 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Region" responded 200 in 18.6413 ms
+2024-09-09 17:12:10.870 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - 200 null "application/json; charset=utf-8" 24.366ms
+2024-09-09 17:12:22.934 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - "application/json" 44
+2024-09-09 17:12:22.939 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:12:22.940 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"Region\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Region.RegionViewDTO]] Add(JobPlatform.DTO.Region.RegionInsertDTO)" on controller "JobPlatform.Controllers.RegionController" ("JobPlatform").
+2024-09-09 17:12:22.946 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Regions] ([NAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0);"
+2024-09-09 17:12:22.953 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Region.RegionViewDTO"'.
+2024-09-09 17:12:22.954 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.RegionController.Add (JobPlatform)" in 12.5528ms
+2024-09-09 17:12:22.955 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:12:22.957 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Region" responded 200 in 18.3641 ms
+2024-09-09 17:12:22.959 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - 200 null "application/json; charset=utf-8" 24.4919ms
+2024-09-09 17:12:34.903 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - "application/json" 45
+2024-09-09 17:12:34.906 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:12:34.908 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"Region\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Region.RegionViewDTO]] Add(JobPlatform.DTO.Region.RegionInsertDTO)" on controller "JobPlatform.Controllers.RegionController" ("JobPlatform").
+2024-09-09 17:12:34.915 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Regions] ([NAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0);"
+2024-09-09 17:12:34.917 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Region.RegionViewDTO"'.
+2024-09-09 17:12:34.919 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.RegionController.Add (JobPlatform)" in 7.9374ms
+2024-09-09 17:12:34.920 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:12:34.922 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Region" responded 200 in 15.2979 ms
+2024-09-09 17:12:34.925 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - 200 null "application/json; charset=utf-8" 22.209ms
+2024-09-09 17:12:43.153 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - "application/json" 41
+2024-09-09 17:12:43.157 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:12:43.158 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"Region\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Region.RegionViewDTO]] Add(JobPlatform.DTO.Region.RegionInsertDTO)" on controller "JobPlatform.Controllers.RegionController" ("JobPlatform").
+2024-09-09 17:12:43.163 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Regions] ([NAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0);"
+2024-09-09 17:12:43.166 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Region.RegionViewDTO"'.
+2024-09-09 17:12:43.168 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.RegionController.Add (JobPlatform)" in 8.6356ms
+2024-09-09 17:12:43.170 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:12:43.171 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Region" responded 200 in 14.4206 ms
+2024-09-09 17:12:43.175 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - 200 null "application/json; charset=utf-8" 21.9673ms
+2024-09-09 17:13:03.986 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - "application/json" 43
+2024-09-09 17:13:03.993 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:13:03.995 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"Region\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Region.RegionViewDTO]] Add(JobPlatform.DTO.Region.RegionInsertDTO)" on controller "JobPlatform.Controllers.RegionController" ("JobPlatform").
+2024-09-09 17:13:04.002 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Regions] ([NAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0);"
+2024-09-09 17:13:04.005 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Region.RegionViewDTO"'.
+2024-09-09 17:13:04.006 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.RegionController.Add (JobPlatform)" in 9.989ms
+2024-09-09 17:13:04.007 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:13:04.007 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Region" responded 200 in 13.9107 ms
+2024-09-09 17:13:04.009 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - 200 null "application/json; charset=utf-8" 22.4278ms
+2024-09-09 17:13:11.668 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - "application/json" 38
+2024-09-09 17:13:11.670 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:13:11.671 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Add\", controller = \"Region\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Region.RegionViewDTO]] Add(JobPlatform.DTO.Region.RegionInsertDTO)" on controller "JobPlatform.Controllers.RegionController" ("JobPlatform").
+2024-09-09 17:13:11.676 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Regions] ([NAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0);"
+2024-09-09 17:13:11.678 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Region.RegionViewDTO"'.
+2024-09-09 17:13:11.679 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.RegionController.Add (JobPlatform)" in 6.6453ms
+2024-09-09 17:13:11.680 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.RegionController.Add (JobPlatform)"'
+2024-09-09 17:13:11.682 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Region" responded 200 in 12.5422 ms
+2024-09-09 17:13:11.684 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Region""" - 200 null "application/json; charset=utf-8" 16.2639ms
+2024-09-09 17:13:20.651 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "DELETE" "https"://"localhost:7044""""/api/Region/9""" - "application/json" 38
+2024-09-09 17:13:20.654 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.RegionController.Delete (JobPlatform)"'
+2024-09-09 17:13:20.660 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Delete\", controller = \"Region\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] Delete(Int32)" on controller "JobPlatform.Controllers.RegionController" ("JobPlatform").
+2024-09-09 17:13:20.673 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[ID], [r].[NAME]
+FROM [Regions] AS [r]
+WHERE [r].[ID] = @__p_0"
+2024-09-09 17:13:20.688 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Regions]
+OUTPUT 1
+WHERE [ID] = @p0;"
+2024-09-09 17:13:20.693 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Boolean"'.
+2024-09-09 17:13:20.696 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.RegionController.Delete (JobPlatform)" in 34.8375ms
+2024-09-09 17:13:20.698 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.RegionController.Delete (JobPlatform)"'
+2024-09-09 17:13:20.700 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "DELETE" "/api/Region/9" responded 200 in 45.7909 ms
+2024-09-09 17:13:20.703 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "DELETE" "https"://"localhost:7044""""/api/Region/9""" - 200 null "application/json; charset=utf-8" 52.1237ms
+2024-09-09 17:13:30.653 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Region/7""" - "application/json" 38
+2024-09-09 17:13:30.658 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.RegionController.GetOne (JobPlatform)"'
+2024-09-09 17:13:30.663 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetOne\", controller = \"Region\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Region.RegionViewDTO]] GetOne(Int32)" on controller "JobPlatform.Controllers.RegionController" ("JobPlatform").
+2024-09-09 17:13:30.675 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[ID], [r].[NAME]
+FROM [Regions] AS [r]
+WHERE [r].[ID] = @__p_0"
+2024-09-09 17:13:30.685 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Region.RegionViewDTO"'.
+2024-09-09 17:13:30.688 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.RegionController.GetOne (JobPlatform)" in 19.7846ms
+2024-09-09 17:13:30.689 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.RegionController.GetOne (JobPlatform)"'
+2024-09-09 17:13:30.690 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Region/7" responded 200 in 32.7964 ms
+2024-09-09 17:13:30.692 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Region/7""" - 200 null "application/json; charset=utf-8" 39.0605ms
+2024-09-09 17:13:37.202 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Region/""" - "application/json" 38
+2024-09-09 17:13:37.205 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.RegionController.GetAll (JobPlatform)"'
+2024-09-09 17:13:37.209 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetAll\", controller = \"Region\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.Region.RegionViewDTO]]] GetAll()" on controller "JobPlatform.Controllers.RegionController" ("JobPlatform").
+2024-09-09 17:13:37.224 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[ID], [r].[NAME]
+FROM [Regions] AS [r]"
+2024-09-09 17:13:37.245 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JobPlatform.DTO.Region.RegionViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-09 17:13:37.247 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.RegionController.GetAll (JobPlatform)" in 36.974ms
+2024-09-09 17:13:37.251 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.RegionController.GetAll (JobPlatform)"'
+2024-09-09 17:13:37.253 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Region/" responded 200 in 47.3536 ms
+2024-09-09 17:13:37.255 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Region/""" - 200 null "application/json; charset=utf-8" 53.1588ms
+2024-09-09 17:15:41.908 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-09 17:15:42.188 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-09-09 17:15:42.190 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-09-09 17:15:42.192 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-09-09 17:15:42.194 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-09-09 17:15:42.195 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-09-09 17:15:47.544 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-09-09 17:17:08.086 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-09 17:17:08.389 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-09-09 17:17:08.391 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-09-09 17:17:08.393 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-09-09 17:17:08.394 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-09-09 17:17:08.395 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-09-09 17:17:10.876 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-09-09 17:17:11.814 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 952.8118ms
+2024-09-09 17:17:11.889 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-09-09 17:17:11.889 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-09-09 17:17:11.908 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 18.943ms
+2024-09-09 17:17:12.007 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 118.1034ms
+2024-09-09 17:17:12.066 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-09-09 17:17:12.513 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 446.9519ms
+2024-09-09 17:17:32.484 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/login""" - "application/json" 71
+2024-09-09 17:17:32.636 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.Login (JobPlatform)"'
+2024-09-09 17:17:32.676 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPlatform.DTO.User.UserLoginDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-09-09 17:17:35.700 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("90"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[RESTORE_CODE], [u].[ROLE], [u].[UNAUTHORIZED_COUNT], [u].[USERNAME], [b].[ID], [b].[ADDRESS], [b].[EMAIL], [b].[IMAGE], [b].[NAME], [b].[PHONE], [b].[USER_ID], [b].[WEBSITE], [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Users] AS [u]
+LEFT JOIN [Businesses] AS [b] ON [u].[ID] = [b].[USER_ID]
+LEFT JOIN [Applicants] AS [a] ON [u].[ID] = [a].[USER_ID]
+WHERE [u].[USERNAME] = @__username_0"
+2024-09-09 17:17:36.753 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "UnauthorizedObjectResult", writing value of type '"System.String"'.
+2024-09-09 17:17:36.764 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.Login (JobPlatform)" in 4079.5458ms
+2024-09-09 17:17:36.766 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.Login (JobPlatform)"'
+2024-09-09 17:17:36.769 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/login" responded 401 in 4135.9201 ms
+2024-09-09 17:17:36.778 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/login""" - 401 null "text/plain; charset=utf-8" 4294.7632ms
+2024-09-09 17:17:45.253 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/login""" - "application/json" 71
+2024-09-09 17:17:45.261 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.Login (JobPlatform)"'
+2024-09-09 17:17:45.263 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPlatform.DTO.User.UserLoginDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-09-09 17:17:45.391 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[RESTORE_CODE], [u].[ROLE], [u].[UNAUTHORIZED_COUNT], [u].[USERNAME], [b].[ID], [b].[ADDRESS], [b].[EMAIL], [b].[IMAGE], [b].[NAME], [b].[PHONE], [b].[USER_ID], [b].[WEBSITE], [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Users] AS [u]
+LEFT JOIN [Businesses] AS [b] ON [u].[ID] = [b].[USER_ID]
+LEFT JOIN [Applicants] AS [a] ON [u].[ID] = [a].[USER_ID]
+WHERE [u].[USERNAME] = @__username_0"
+2024-09-09 17:17:53.165 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2024-09-09 17:17:53.173 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.Login (JobPlatform)" in 7908.8867ms
+2024-09-09 17:17:53.175 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.Login (JobPlatform)"'
+2024-09-09 17:17:53.177 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/login" responded 200 in 7916.3514 ms
+2024-09-09 17:17:53.183 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/login""" - 200 null "application/json; charset=utf-8" 7929.8836ms
+2024-09-09 17:19:58.128 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Subscription/business""" - "application/json" 41
+2024-09-09 17:19:58.140 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)"'
+2024-09-09 17:19:58.152 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"AddOrRenewForBusiness\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] AddOrRenewForBusiness(JobPlatform.DTO.Subscription.SubscriptionInsertDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:19:58.227 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("10"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[DURATION_DAYS], [s].[NAME], [s].[PRICE]
+FROM [Subscription_Types] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:19:58.314 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@__businessId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[BUSINESS_ID] = @__businessId_0 AND [s].[START_DATE] <= CAST(GETDATE() AS date) AND [s].[END_DATE] >= CAST(GETDATE() AS date)"
+2024-09-09 17:19:58.555 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = Date), @p3='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Subscriptions] ([ALLOWANCE], [BUSINESS_ID], [END_DATE], [START_DATE])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3);"
+2024-09-09 17:19:58.609 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO"'.
+2024-09-09 17:19:58.649 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)" in 495.5331ms
+2024-09-09 17:19:58.651 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)"'
+2024-09-09 17:19:58.652 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Subscription/business" responded 200 in 512.3701 ms
+2024-09-09 17:19:58.654 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Subscription/business""" - 200 null "application/json; charset=utf-8" 533.7998ms
+2024-09-09 17:21:12.017 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Subscription/business""" - "application/json" 69
+2024-09-09 17:21:12.058 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)"'
+2024-09-09 17:21:12.061 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"AddOrRenewForBusiness\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] AddOrRenewForBusiness(JobPlatform.DTO.Subscription.SubscriptionInsertDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:21:12.080 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("8"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[DURATION_DAYS], [s].[NAME], [s].[PRICE]
+FROM [Subscription_Types] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:21:12.096 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("12"ms) [Parameters=["@__businessId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[BUSINESS_ID] = @__businessId_0 AND [s].[START_DATE] <= CAST(GETDATE() AS date) AND [s].[END_DATE] >= CAST(GETDATE() AS date)"
+2024-09-09 17:21:12.179 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("4"ms) [Parameters=["@__dateSince_0='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Vacancies] AS [v]
+WHERE [v].[PUBLICATION_DATE] >= @__dateSince_0"
+2024-09-09 17:21:12.233 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("9"ms) [Parameters=["@p4='?' (DbType = Int64), @p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = Date), @p3='?' (DbType = Date), @p5='?' (DbType = Int32), @p6='?' (DbType = Int64), @p7='?' (DbType = Date), @p8='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Subscriptions] SET [ALLOWANCE] = @p0, [BUSINESS_ID] = @p1, [END_DATE] = @p2, [START_DATE] = @p3
+OUTPUT 1
+WHERE [ID] = @p4;
+INSERT INTO [Subscriptions] ([ALLOWANCE], [BUSINESS_ID], [END_DATE], [START_DATE])
+OUTPUT INSERTED.[ID]
+VALUES (@p5, @p6, @p7, @p8);"
+2024-09-09 17:21:12.264 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO"'.
+2024-09-09 17:21:12.267 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)" in 202.2584ms
+2024-09-09 17:21:12.270 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)"'
+2024-09-09 17:21:12.273 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Subscription/business" responded 200 in 214.5919 ms
+2024-09-09 17:21:12.276 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Subscription/business""" - 200 null "application/json; charset=utf-8" 262.0674ms
+2024-09-09 17:25:25.556 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription/business/cancel/2""" - "application/json" 69
+2024-09-09 17:25:25.605 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.CancelBusiness (JobPlatform)"'
+2024-09-09 17:25:25.615 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"CancelBusiness\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] CancelBusiness(Int64)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:25:25.643 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("7"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:25:25.652 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("4"ms) [Parameters=["@p4='?' (DbType = Int64), @p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = Date), @p3='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Subscriptions] SET [ALLOWANCE] = @p0, [BUSINESS_ID] = @p1, [END_DATE] = @p2, [START_DATE] = @p3
+OUTPUT 1
+WHERE [ID] = @p4;"
+2024-09-09 17:25:25.657 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO"'.
+2024-09-09 17:25:25.660 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.CancelBusiness (JobPlatform)" in 40.8144ms
+2024-09-09 17:25:25.663 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.CancelBusiness (JobPlatform)"'
+2024-09-09 17:25:25.666 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/Subscription/business/cancel/2" responded 200 in 61.1702 ms
+2024-09-09 17:25:25.669 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription/business/cancel/2""" - 200 null "application/json; charset=utf-8" 113.6386ms
+2024-09-09 17:26:18.987 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/business/""" - "application/json" 69
+2024-09-09 17:26:18.995 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscriptionsBusiness (JobPlatform)"'
+2024-09-09 17:26:19.000 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetSubscriptionsBusiness\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]]] GetSubscriptionsBusiness()" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:26:19.020 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@__businessId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[BUSINESS_ID] = @__businessId_0"
+2024-09-09 17:26:19.046 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO[]"'.
+2024-09-09 17:26:19.049 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.GetSubscriptionsBusiness (JobPlatform)" in 47.2473ms
+2024-09-09 17:26:19.052 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscriptionsBusiness (JobPlatform)"'
+2024-09-09 17:26:19.055 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Subscription/business/" responded 200 in 59.7250 ms
+2024-09-09 17:26:19.059 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/business/""" - 200 null "application/json; charset=utf-8" 71.4574ms
+2024-09-09 17:28:58.641 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Subscription/business""" - "application/json" 45
+2024-09-09 17:28:58.685 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)"'
+2024-09-09 17:28:58.688 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"AddOrRenewForBusiness\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] AddOrRenewForBusiness(JobPlatform.DTO.Subscription.SubscriptionInsertDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:28:58.704 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("6"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[DURATION_DAYS], [s].[NAME], [s].[PRICE]
+FROM [Subscription_Types] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:28:58.714 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@__businessId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[BUSINESS_ID] = @__businessId_0 AND [s].[START_DATE] <= CAST(GETDATE() AS date) AND [s].[END_DATE] >= CAST(GETDATE() AS date)"
+2024-09-09 17:28:58.723 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = Date), @p3='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Subscriptions] ([ALLOWANCE], [BUSINESS_ID], [END_DATE], [START_DATE])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3);"
+2024-09-09 17:28:58.727 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO"'.
+2024-09-09 17:28:58.731 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)" in 38.1653ms
+2024-09-09 17:28:58.733 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)"'
+2024-09-09 17:28:58.734 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Subscription/business" responded 200 in 48.8532 ms
+2024-09-09 17:28:58.739 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Subscription/business""" - 200 null "application/json; charset=utf-8" 97.9247ms
+2024-09-09 17:29:11.837 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Subscription/business""" - "application/json" 45
+2024-09-09 17:29:11.841 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)"'
+2024-09-09 17:29:11.842 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"AddOrRenewForBusiness\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] AddOrRenewForBusiness(JobPlatform.DTO.Subscription.SubscriptionInsertDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:29:11.850 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[DURATION_DAYS], [s].[NAME], [s].[PRICE]
+FROM [Subscription_Types] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:29:11.865 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("1"ms) [Parameters=["@__businessId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[BUSINESS_ID] = @__businessId_0 AND [s].[START_DATE] <= CAST(GETDATE() AS date) AND [s].[END_DATE] >= CAST(GETDATE() AS date)"
+2024-09-09 17:29:11.869 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = Date), @p3='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Subscriptions] ([ALLOWANCE], [BUSINESS_ID], [END_DATE], [START_DATE])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3);"
+2024-09-09 17:29:11.873 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO"'.
+2024-09-09 17:29:11.876 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)" in 31.8832ms
+2024-09-09 17:29:11.879 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)"'
+2024-09-09 17:29:11.881 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Subscription/business" responded 200 in 40.2701 ms
+2024-09-09 17:29:11.884 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Subscription/business""" - 200 null "application/json; charset=utf-8" 46.7741ms
+2024-09-09 17:30:57.248 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/login""" - "application/json" 81
+2024-09-09 17:30:57.286 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.Login (JobPlatform)"'
+2024-09-09 17:30:57.288 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPlatform.DTO.User.UserLoginDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-09-09 17:30:57.303 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("8"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[RESTORE_CODE], [u].[ROLE], [u].[UNAUTHORIZED_COUNT], [u].[USERNAME], [b].[ID], [b].[ADDRESS], [b].[EMAIL], [b].[IMAGE], [b].[NAME], [b].[PHONE], [b].[USER_ID], [b].[WEBSITE], [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Users] AS [u]
+LEFT JOIN [Businesses] AS [b] ON [u].[ID] = [b].[USER_ID]
+LEFT JOIN [Applicants] AS [a] ON [u].[ID] = [a].[USER_ID]
+WHERE [u].[USERNAME] = @__username_0"
+2024-09-09 17:31:07.763 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2024-09-09 17:31:07.765 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.Login (JobPlatform)" in 10472.2323ms
+2024-09-09 17:31:07.766 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.Login (JobPlatform)"'
+2024-09-09 17:31:07.768 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/login" responded 200 in 10481.6912 ms
+2024-09-09 17:31:07.770 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/login""" - 200 null "application/json; charset=utf-8" 10525.1361ms
+2024-09-09 17:31:51.805 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Subscription/business""" - "application/json" 41
+2024-09-09 17:31:51.815 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)"'
+2024-09-09 17:31:51.816 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"AddOrRenewForBusiness\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] AddOrRenewForBusiness(JobPlatform.DTO.Subscription.SubscriptionInsertDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:31:51.825 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[DURATION_DAYS], [s].[NAME], [s].[PRICE]
+FROM [Subscription_Types] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:31:51.830 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@__businessId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[BUSINESS_ID] = @__businessId_0 AND [s].[START_DATE] <= CAST(GETDATE() AS date) AND [s].[END_DATE] >= CAST(GETDATE() AS date)"
+2024-09-09 17:31:51.838 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = Date), @p3='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Subscriptions] ([ALLOWANCE], [BUSINESS_ID], [END_DATE], [START_DATE])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3);"
+2024-09-09 17:31:51.842 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO"'.
+2024-09-09 17:31:51.844 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)" in 26.5751ms
+2024-09-09 17:31:51.847 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)"'
+2024-09-09 17:31:51.848 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Subscription/business" responded 200 in 32.7658 ms
+2024-09-09 17:31:51.850 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Subscription/business""" - 200 null "application/json; charset=utf-8" 45.0491ms
+2024-09-09 17:32:14.821 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/login""" - "application/json" 75
+2024-09-09 17:32:14.830 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.Login (JobPlatform)"'
+2024-09-09 17:32:14.831 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPlatform.DTO.User.UserLoginDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-09-09 17:32:14.842 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("7"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[RESTORE_CODE], [u].[ROLE], [u].[UNAUTHORIZED_COUNT], [u].[USERNAME], [b].[ID], [b].[ADDRESS], [b].[EMAIL], [b].[IMAGE], [b].[NAME], [b].[PHONE], [b].[USER_ID], [b].[WEBSITE], [a].[ID], [a].[ADDRESS], [a].[CV], [a].[EMAIL], [a].[FIRSTNAME], [a].[LASTNAME], [a].[PHONE], [a].[USER_ID]
+FROM [Users] AS [u]
+LEFT JOIN [Businesses] AS [b] ON [u].[ID] = [b].[USER_ID]
+LEFT JOIN [Applicants] AS [a] ON [u].[ID] = [a].[USER_ID]
+WHERE [u].[USERNAME] = @__username_0"
+2024-09-09 17:32:15.154 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2024-09-09 17:32:15.157 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.Login (JobPlatform)" in 324.145ms
+2024-09-09 17:32:15.159 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.Login (JobPlatform)"'
+2024-09-09 17:32:15.162 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/login" responded 200 in 332.4606 ms
+2024-09-09 17:32:15.166 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/login""" - 200 null "application/json; charset=utf-8" 345.0382ms
+2024-09-09 17:32:54.470 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Subscription/business""" - "application/json" 41
+2024-09-09 17:32:54.478 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)"'
+2024-09-09 17:32:54.479 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"AddOrRenewForBusiness\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] AddOrRenewForBusiness(JobPlatform.DTO.Subscription.SubscriptionInsertDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:32:54.488 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[DURATION_DAYS], [s].[NAME], [s].[PRICE]
+FROM [Subscription_Types] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:32:54.497 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("4"ms) [Parameters=["@__businessId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[BUSINESS_ID] = @__businessId_0 AND [s].[START_DATE] <= CAST(GETDATE() AS date) AND [s].[END_DATE] >= CAST(GETDATE() AS date)"
+2024-09-09 17:32:54.505 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = Date), @p3='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Subscriptions] ([ALLOWANCE], [BUSINESS_ID], [END_DATE], [START_DATE])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3);"
+2024-09-09 17:32:54.515 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO"'.
+2024-09-09 17:32:54.519 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)" in 37.9251ms
+2024-09-09 17:32:54.521 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.AddOrRenewForBusiness (JobPlatform)"'
+2024-09-09 17:32:54.523 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/Subscription/business" responded 200 in 45.3111 ms
+2024-09-09 17:32:54.528 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/Subscription/business""" - 200 null "application/json; charset=utf-8" 60.1276ms
+2024-09-09 17:33:21.252 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "DELETE" "https"://"localhost:7044""""/api/Subscription/1""" - "application/json" 41
+2024-09-09 17:33:21.263 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.Delete (JobPlatform)"'
+2024-09-09 17:33:21.270 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Delete\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] Delete(Int64)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:33:21.283 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:33:21.304 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Subscriptions]
+OUTPUT 1
+WHERE [ID] = @p0;"
+2024-09-09 17:33:21.313 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Boolean"'.
+2024-09-09 17:33:21.320 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.Delete (JobPlatform)" in 47.5172ms
+2024-09-09 17:33:21.322 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.Delete (JobPlatform)"'
+2024-09-09 17:33:21.323 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "DELETE" "/api/Subscription/1" responded 200 in 60.3752 ms
+2024-09-09 17:33:21.325 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "DELETE" "https"://"localhost:7044""""/api/Subscription/1""" - 200 null "application/json; charset=utf-8" 72.8386ms
+2024-09-09 17:35:00.347 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/bybusiness/1""" - "application/json" 41
+2024-09-09 17:35:00.413 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscriptionsInternal (JobPlatform)"'
+2024-09-09 17:35:00.421 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetSubscriptionsInternal\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]]] GetSubscriptionsInternal(Int64)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:35:00.433 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("6"ms) [Parameters=["@__businessId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[BUSINESS_ID] = @__businessId_0"
+2024-09-09 17:35:00.438 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO[]"'.
+2024-09-09 17:35:00.441 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.GetSubscriptionsInternal (JobPlatform)" in 16.308ms
+2024-09-09 17:35:00.443 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscriptionsInternal (JobPlatform)"'
+2024-09-09 17:35:00.445 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Subscription/bybusiness/1" responded 200 in 32.4720 ms
+2024-09-09 17:35:00.448 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/bybusiness/1""" - 200 null "application/json; charset=utf-8" 102.3176ms
+2024-09-09 17:39:01.659 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription/""" - "application/json" 100
+2024-09-09 17:39:01.686 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:39:01.695 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Update\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] Update(JobPlatform.DTO.Subscription.SubscriptionUpdateDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:39:01.722 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[JobPlatform.DTO.Subscription.SubscriptionViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[JobPlatform.Services.SubscriptionService+<Update>d__9, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-09 17:39:01.727 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("6"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:39:02.021 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)" in 321.9082ms
+2024-09-09 17:39:02.117 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:39:02.147 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("83"ms) [Parameters=["@p4='?' (DbType = Int64), @p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = Date), @p3='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Subscriptions] SET [ALLOWANCE] = @p0, [BUSINESS_ID] = @p1, [END_DATE] = @p2, [START_DATE] = @p3
+OUTPUT 1
+WHERE [ID] = @p4;"
+2024-09-09 17:39:02.179 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "PUT" "/api/Subscription/" responded 500 in 492.8711 ms
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-09-09 17:39:02.369 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-09 17:39:02.389 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription/""" - 500 null "text/plain; charset=utf-8" 730.4014ms
+2024-09-09 17:39:59.870 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription/""" - "application/json" 130
+2024-09-09 17:39:59.874 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:39:59.875 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Update\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] Update(JobPlatform.DTO.Subscription.SubscriptionUpdateDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:39:59.882 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[JobPlatform.DTO.Subscription.SubscriptionViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[JobPlatform.Services.SubscriptionService+<Update>d__9, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-09 17:39:59.940 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("59"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:40:00.028 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)" in 150.7925ms
+2024-09-09 17:40:00.029 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("27"ms) [Parameters=["@p4='?' (DbType = Int64), @p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = Date), @p3='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Subscriptions] SET [ALLOWANCE] = @p0, [BUSINESS_ID] = @p1, [END_DATE] = @p2, [START_DATE] = @p3
+OUTPUT 1
+WHERE [ID] = @p4;"
+2024-09-09 17:40:00.088 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:40:00.130 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "PUT" "/api/Subscription/" responded 500 in 256.9030 ms
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-09-09 17:40:00.249 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-09 17:40:00.266 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription/""" - 500 null "text/plain; charset=utf-8" 395.8268ms
+2024-09-09 17:42:46.309 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/4""" - "application/json" 130
+2024-09-09 17:42:46.358 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)"'
+2024-09-09 17:42:46.364 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetSubscription\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] GetSubscription(Int64)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:42:46.384 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("8"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:42:46.391 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@__dateSince_0='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Vacancies] AS [v]
+WHERE [v].[PUBLICATION_DATE] >= @__dateSince_0"
+2024-09-09 17:42:46.394 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO"'.
+2024-09-09 17:42:46.395 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)" in 28.7146ms
+2024-09-09 17:42:46.396 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)"'
+2024-09-09 17:42:46.398 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Subscription/4" responded 200 in 39.3829 ms
+2024-09-09 17:42:46.400 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/4""" - 200 null "application/json; charset=utf-8" 91.4111ms
+2024-09-09 17:43:19.689 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription""" - "application/json" 130
+2024-09-09 17:43:19.698 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:43:19.700 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Update\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] Update(JobPlatform.DTO.Subscription.SubscriptionUpdateDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:43:19.703 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[JobPlatform.DTO.Subscription.SubscriptionViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[JobPlatform.Services.SubscriptionService+<Update>d__9, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-09 17:43:19.704 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:43:19.839 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("13"ms) [Parameters=["@p4='?' (DbType = Int64), @p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = Date), @p3='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Subscriptions] SET [ALLOWANCE] = @p0, [BUSINESS_ID] = @p1, [END_DATE] = @p2, [START_DATE] = @p3
+OUTPUT 1
+WHERE [ID] = @p4;"
+2024-09-09 17:43:19.851 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)" in 149.7314ms
+2024-09-09 17:43:19.905 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:43:19.946 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "PUT" "/api/Subscription" responded 500 in 247.9099 ms
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-09-09 17:43:20.050 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-09 17:43:20.064 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription""" - 500 null "text/plain; charset=utf-8" 375.424ms
+2024-09-09 17:43:32.670 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/4""" - "application/json" 130
+2024-09-09 17:43:32.673 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)"'
+2024-09-09 17:43:32.675 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetSubscription\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] GetSubscription(Int64)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:43:32.680 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:43:32.687 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("1"ms) [Parameters=["@__dateSince_0='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Vacancies] AS [v]
+WHERE [v].[PUBLICATION_DATE] >= @__dateSince_0"
+2024-09-09 17:43:32.691 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO"'.
+2024-09-09 17:43:32.693 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)" in 16.1879ms
+2024-09-09 17:43:32.696 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)"'
+2024-09-09 17:43:32.698 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Subscription/4" responded 200 in 24.1672 ms
+2024-09-09 17:43:32.702 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/4""" - 200 null "application/json; charset=utf-8" 32.2921ms
+2024-09-09 17:46:23.908 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-09 17:46:24.218 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-09-09 17:46:24.219 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-09-09 17:46:24.222 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-09-09 17:46:24.223 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-09-09 17:46:24.224 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-09-09 17:46:26.710 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-09-09 17:46:28.047 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1343.0404ms
+2024-09-09 17:46:28.089 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-09-09 17:46:28.089 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-09-09 17:46:28.104 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 13.8418ms
+2024-09-09 17:46:28.181 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 91.7552ms
+2024-09-09 17:46:28.249 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-09-09 17:46:28.768 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 519.9509ms
+2024-09-09 17:46:35.459 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/bybusiness/1""" - "application/json" 41
+2024-09-09 17:46:35.614 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscriptionsInternal (JobPlatform)"'
+2024-09-09 17:46:35.657 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetSubscriptionsInternal\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]]] GetSubscriptionsInternal(Int64)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:46:38.260 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("72"ms) [Parameters=["@__businessId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[BUSINESS_ID] = @__businessId_0"
+2024-09-09 17:46:38.402 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JobPlatform.DTO.Subscription.SubscriptionViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-09 17:46:38.438 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.GetSubscriptionsInternal (JobPlatform)" in 2774.3344ms
+2024-09-09 17:46:38.441 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscriptionsInternal (JobPlatform)"'
+2024-09-09 17:46:38.444 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Subscription/bybusiness/1" responded 200 in 2835.5742 ms
+2024-09-09 17:46:38.457 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/bybusiness/1""" - 200 null "application/json; charset=utf-8" 2998.3057ms
+2024-09-09 17:47:04.296 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription""" - "application/json" 130
+2024-09-09 17:47:04.304 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:47:04.313 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Update\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] Update(JobPlatform.DTO.Subscription.SubscriptionUpdateDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:47:04.561 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[JobPlatform.DTO.Subscription.SubscriptionViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[JobPlatform.Services.SubscriptionService+<Update>d__9, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-09 17:47:04.571 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("18"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:47:04.807 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)" in 490.9186ms
+2024-09-09 17:47:04.861 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:47:04.901 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "PUT" "/api/Subscription" responded 500 in 597.4913 ms
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-09-09 17:47:05.043 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-09 17:47:05.061 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription""" - 500 null "text/plain; charset=utf-8" 764.6787ms
+2024-09-09 17:48:00.595 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-09 17:48:00.906 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-09-09 17:48:00.908 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-09-09 17:48:00.910 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-09-09 17:48:00.911 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-09-09 17:48:00.912 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-09-09 17:48:04.986 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-09-09 17:48:06.005 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1021.1066ms
+2024-09-09 17:48:06.157 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-09-09 17:48:06.157 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-09-09 17:48:06.269 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 57.8295ms
+2024-09-09 17:48:06.396 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 239.1179ms
+2024-09-09 17:48:06.489 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-09-09 17:48:07.187 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 699.4325ms
+2024-09-09 17:48:15.045 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription""" - "application/json" 130
+2024-09-09 17:48:15.159 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:48:15.202 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Update\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] Update(JobPlatform.DTO.Subscription.SubscriptionUpdateDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:48:17.625 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[JobPlatform.DTO.Subscription.SubscriptionViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[JobPlatform.Services.SubscriptionService+<Update>d__9, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-09 17:48:17.840 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)" in 2621.8817ms
+2024-09-09 17:48:17.890 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:48:17.932 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "PUT" "/api/Subscription" responded 500 in 2776.5484 ms
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-09-09 17:48:18.068 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-09 17:48:18.172 +03:00 Microsoft.EntityFrameworkCore.Database.Connection[Error] An error occurred using the connection to database '""' on server '""'.
+2024-09-09 17:48:18.173 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription""" - 500 null "text/plain; charset=utf-8" 3128.6865ms
+2024-09-09 17:50:05.111 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription""" - "application/json" 74
+2024-09-09 17:50:05.146 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:50:05.150 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Update\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] Update(JobPlatform.DTO.Subscription.SubscriptionUpdateDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:50:05.357 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[JobPlatform.DTO.Subscription.SubscriptionViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[JobPlatform.Services.SubscriptionService+<Update>d__9, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-09 17:50:05.480 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)" in 328.1077ms
+2024-09-09 17:50:05.529 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:50:05.563 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "PUT" "/api/Subscription" responded 500 in 417.3179 ms
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-09-09 17:50:05.659 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-09 17:50:05.660 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("274"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:50:05.743 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription""" - 500 null "text/plain; charset=utf-8" 633.651ms
+2024-09-09 17:50:05.750 +03:00 Microsoft.EntityFrameworkCore.Query[Error] An exception occurred while iterating over the results of a query for context type '"JobPlatform.Data.JobplatformContext"'."
+""System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'JobplatformContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'JobplatformContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-09-09 17:50:16.888 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/4""" - "application/json" 74
+2024-09-09 17:50:16.893 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)"'
+2024-09-09 17:50:16.901 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetSubscription\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] GetSubscription(Int64)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:50:16.940 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("10"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:50:17.139 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@__dateSince_0='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Vacancies] AS [v]
+WHERE [v].[PUBLICATION_DATE] >= @__dateSince_0"
+2024-09-09 17:50:17.152 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO"'.
+2024-09-09 17:50:17.182 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)" in 278.6485ms
+2024-09-09 17:50:17.184 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)"'
+2024-09-09 17:50:17.188 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Subscription/4" responded 200 in 295.3966 ms
+2024-09-09 17:50:17.191 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/4""" - 200 null "application/json; charset=utf-8" 303.5071ms
+2024-09-09 17:52:36.496 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription/4""" - "application/json" 130
+2024-09-09 17:52:36.521 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"405 HTTP Method Not Supported"'
+2024-09-09 17:52:36.524 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"405 HTTP Method Not Supported"'
+2024-09-09 17:52:36.525 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/Subscription/4" responded 405 in 4.0921 ms
+2024-09-09 17:52:36.530 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription/4""" - 405 0 null 35.7501ms
+2024-09-09 17:52:43.688 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription/""" - "application/json" 130
+2024-09-09 17:52:43.691 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:52:43.692 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Update\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] Update(JobPlatform.DTO.Subscription.SubscriptionUpdateDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:52:43.698 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[JobPlatform.DTO.Subscription.SubscriptionViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[JobPlatform.Services.SubscriptionService+<Update>d__9, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-09 17:52:43.726 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("6"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:52:43.846 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)" in 151.5224ms
+2024-09-09 17:52:43.900 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:52:43.937 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "PUT" "/api/Subscription/" responded 500 in 245.9775 ms
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-09-09 17:52:44.051 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-09 17:52:44.066 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription/""" - 500 null "text/plain; charset=utf-8" 378.5997ms
+2024-09-09 17:53:15.317 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/4""" - "application/json" 130
+2024-09-09 17:53:15.396 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)"'
+2024-09-09 17:53:15.401 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetSubscription\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] GetSubscription(Int64)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:53:15.438 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("31"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:53:15.453 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("10"ms) [Parameters=["@__dateSince_0='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Vacancies] AS [v]
+WHERE [v].[PUBLICATION_DATE] >= @__dateSince_0"
+2024-09-09 17:53:15.468 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO"'.
+2024-09-09 17:53:15.469 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)" in 65.786ms
+2024-09-09 17:53:15.470 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)"'
+2024-09-09 17:53:15.471 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Subscription/4" responded 200 in 74.8817 ms
+2024-09-09 17:53:15.473 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/4""" - 200 null "application/json; charset=utf-8" 155.8724ms
+2024-09-09 17:53:30.664 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription/""" - "application/json" 130
+2024-09-09 17:53:30.667 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:53:30.670 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Update\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] Update(JobPlatform.DTO.Subscription.SubscriptionUpdateDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:53:30.679 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[JobPlatform.DTO.Subscription.SubscriptionViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[JobPlatform.Services.SubscriptionService+<Update>d__9, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-09 17:53:30.700 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("22"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:53:30.836 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)" in 160.76ms
+2024-09-09 17:54:12.184 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:54:12.220 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "PUT" "/api/Subscription/" responded 500 in 41552.7808 ms
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-09-09 17:54:12.312 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO,JobPlatform.Services.SubscriptionService+<Update>d__9]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-09 17:54:12.323 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription/""" - 500 null "text/plain; charset=utf-8" 41659.3747ms
+2024-09-09 17:55:56.909 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-09 17:55:57.179 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-09-09 17:55:57.182 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-09-09 17:55:57.184 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-09-09 17:55:57.185 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-09-09 17:55:57.186 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-09-09 17:56:01.925 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-09-09 17:56:02.835 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 918.4377ms
+2024-09-09 17:56:02.861 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-09-09 17:56:02.861 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-09-09 17:56:02.888 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 27.004ms
+2024-09-09 17:56:02.997 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 136.0451ms
+2024-09-09 17:56:03.164 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-09-09 17:56:03.739 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 575.0466ms
+2024-09-09 17:56:29.687 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription/""" - "application/json" 130
+2024-09-09 17:56:29.841 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:56:29.898 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Update\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] Update(JobPlatform.DTO.Subscription.SubscriptionUpdateDTO)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:56:32.962 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("83"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:56:36.811 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("15"ms) [Parameters=["@p4='?' (DbType = Int64), @p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = Date), @p3='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Subscriptions] SET [ALLOWANCE] = @p0, [BUSINESS_ID] = @p1, [END_DATE] = @p2, [START_DATE] = @p3
+OUTPUT 1
+WHERE [ID] = @p4;"
+2024-09-09 17:56:36.853 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO"'.
+2024-09-09 17:56:36.898 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)" in 6992.5013ms
+2024-09-09 17:56:36.901 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.Update (JobPlatform)"'
+2024-09-09 17:56:36.905 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/Subscription/" responded 200 in 7069.5137 ms
+2024-09-09 17:56:36.918 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/Subscription/""" - 200 null "application/json; charset=utf-8" 7230.6816ms
+2024-09-09 17:56:56.237 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/bybusiness/1""" - "application/json" 130
+2024-09-09 17:56:56.246 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscriptionsInternal (JobPlatform)"'
+2024-09-09 17:56:56.253 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetSubscriptionsInternal\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]]] GetSubscriptionsInternal(Int64)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:56:56.388 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("6"ms) [Parameters=["@__businessId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[BUSINESS_ID] = @__businessId_0"
+2024-09-09 17:56:56.413 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JobPlatform.DTO.Subscription.SubscriptionViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-09 17:56:56.418 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.GetSubscriptionsInternal (JobPlatform)" in 161.6212ms
+2024-09-09 17:56:56.420 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscriptionsInternal (JobPlatform)"'
+2024-09-09 17:56:56.420 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Subscription/bybusiness/1" responded 200 in 175.1080 ms
+2024-09-09 17:56:56.422 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/bybusiness/1""" - 200 null "application/json; charset=utf-8" 185.2876ms
+2024-09-09 17:57:15.721 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/4""" - "application/json" 130
+2024-09-09 17:57:15.727 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)"'
+2024-09-09 17:57:15.734 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetSubscription\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] GetSubscription(Int64)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 17:57:15.771 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE]
+FROM [Subscriptions] AS [s]
+WHERE [s].[ID] = @__p_0"
+2024-09-09 17:57:15.843 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@__dateSince_0='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Vacancies] AS [v]
+WHERE [v].[PUBLICATION_DATE] >= @__dateSince_0"
+2024-09-09 17:57:15.851 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO"'.
+2024-09-09 17:57:15.853 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)" in 116.5523ms
+2024-09-09 17:57:15.855 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)"'
+2024-09-09 17:57:15.855 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Subscription/4" responded 200 in 128.9812 ms
+2024-09-09 17:57:15.859 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/4""" - 200 null "application/json; charset=utf-8" 137.7029ms
+2024-09-09 18:00:30.613 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-09 18:00:30.878 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-09-09 18:00:30.881 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-09-09 18:00:30.883 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-09-09 18:00:30.884 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-09-09 18:00:30.886 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-09-09 18:00:35.201 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-09-09 18:00:36.262 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 1068.5926ms
+2024-09-09 18:00:36.300 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-09-09 18:00:36.300 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-09-09 18:00:36.327 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 28.3369ms
+2024-09-09 18:00:36.375 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 75.5229ms
+2024-09-09 18:00:36.431 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-09-09 18:00:36.909 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 478.2654ms
+2024-09-09 18:00:47.408 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/4""" - "application/json" 130
+2024-09-09 18:00:47.538 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)"'
+2024-09-09 18:00:47.568 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetSubscription\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]] GetSubscription(Int64)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 18:00:50.366 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("82"ms) [Parameters=["@__id_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE], [b].[ID], [b].[ADDRESS], [b].[EMAIL], [b].[IMAGE], [b].[NAME], [b].[PHONE], [b].[USER_ID], [b].[WEBSITE]
+FROM [Subscriptions] AS [s]
+INNER JOIN [Businesses] AS [b] ON [s].[BUSINESS_ID] = [b].[ID]
+WHERE [s].[ID] = @__id_0"
+2024-09-09 18:00:50.652 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("7"ms) [Parameters=["@__dateSince_0='?' (DbType = Date)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Vacancies] AS [v]
+WHERE [v].[PUBLICATION_DATE] >= @__dateSince_0"
+2024-09-09 18:00:50.672 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.Subscription.SubscriptionViewDTO"'.
+2024-09-09 18:00:50.710 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)" in 3133.6761ms
+2024-09-09 18:00:50.713 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscription (JobPlatform)"'
+2024-09-09 18:00:50.717 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Subscription/4" responded 200 in 3182.4665 ms
+2024-09-09 18:00:50.729 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/4""" - 200 null "application/json; charset=utf-8" 3321.7519ms
+2024-09-09 18:01:01.220 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/bybusiness/2""" - "application/json" 130
+2024-09-09 18:01:01.229 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscriptionsInternal (JobPlatform)"'
+2024-09-09 18:01:01.239 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetSubscriptionsInternal\", controller = \"Subscription\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.Subscription.SubscriptionViewDTO]]] GetSubscriptionsInternal(Int64)" on controller "JobPlatform.Controllers.SubscriptionController" ("JobPlatform").
+2024-09-09 18:01:01.368 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("10"ms) [Parameters=["@__businessId_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[ID], [s].[ALLOWANCE], [s].[BUSINESS_ID], [s].[END_DATE], [s].[START_DATE], [b].[ID], [b].[ADDRESS], [b].[EMAIL], [b].[IMAGE], [b].[NAME], [b].[PHONE], [b].[USER_ID], [b].[WEBSITE]
+FROM [Subscriptions] AS [s]
+INNER JOIN [Businesses] AS [b] ON [s].[BUSINESS_ID] = [b].[ID]
+WHERE [s].[BUSINESS_ID] = @__businessId_0"
+2024-09-09 18:01:01.396 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JobPlatform.DTO.Subscription.SubscriptionViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-09 18:01:01.401 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.SubscriptionController.GetSubscriptionsInternal (JobPlatform)" in 159.5783ms
+2024-09-09 18:01:01.404 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.SubscriptionController.GetSubscriptionsInternal (JobPlatform)"'
+2024-09-09 18:01:01.406 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/Subscription/bybusiness/2" responded 200 in 177.2833 ms
+2024-09-09 18:01:01.409 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/Subscription/bybusiness/2""" - 200 null "application/json; charset=utf-8" 188.9592ms

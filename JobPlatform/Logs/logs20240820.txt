@@ -1,0 +1,647 @@
+2024-08-20 17:47:13.408 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-20 17:47:13.472 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] Creating key {bb25228f-9e3a-4b4c-9dca-8a9cfe5ff2f2} with creation date 2024-08-20 14:47:13Z, activation date 2024-08-20 14:47:13Z, and expiration date 2024-11-18 14:47:13Z.
+2024-08-20 17:47:13.533 +03:00 Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[Information] Writing data to file '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys\key-bb25228f-9e3a-4b4c-9dca-8a9cfe5ff2f2.xml"'.
+2024-08-20 17:47:13.865 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-08-20 17:47:13.866 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-08-20 17:47:13.868 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-08-20 17:47:13.869 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-08-20 17:47:13.870 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-08-20 17:47:19.286 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger""" - null null
+2024-08-20 17:47:20.039 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger""" - 301 0 null 760.9389ms
+2024-08-20 17:47:20.046 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-08-20 17:47:20.144 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 94.0053ms
+2024-08-20 17:47:20.151 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/swagger-ui.css""" - null null
+2024-08-20 17:47:20.188 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-08-20 17:47:20.151 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/swagger-ui-bundle.js""" - null null
+2024-08-20 17:47:20.152 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/swagger-ui-standalone-preset.js""" - null null
+2024-08-20 17:47:20.173 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-08-20 17:47:20.238 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2024-08-20 17:47:20.269 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/swagger-ui.css""" - 200 143943 "text/css" 117.4377ms
+2024-08-20 17:47:20.353 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 182.8426ms
+2024-08-20 17:47:20.404 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2024-08-20 17:47:20.407 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2024-08-20 17:47:20.412 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/swagger-ui-standalone-preset.js""" - 200 339486 "text/javascript" 260.2256ms
+2024-08-20 17:47:20.416 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/swagger-ui-bundle.js""" - 200 1096145 "text/javascript" 264.2217ms
+2024-08-20 17:47:20.487 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 299.3957ms
+2024-08-20 17:47:20.614 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-08-20 17:47:20.673 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/favicon-32x32.png""" - null null
+2024-08-20 17:47:20.678 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2024-08-20 17:47:20.680 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/favicon-32x32.png""" - 200 628 "image/png" 8.0133ms
+2024-08-20 17:47:22.196 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 1581.7462ms
+2024-08-20 17:50:21.067 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-20 17:50:21.307 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-08-20 17:50:21.309 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-08-20 17:50:21.311 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-08-20 17:50:21.312 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-08-20 17:50:21.312 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-08-20 17:50:24.120 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-08-20 17:50:26.098 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-08-20 17:50:26.098 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-08-20 17:50:26.117 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 18.216ms
+2024-08-20 17:50:26.117 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 2002.3385ms
+2024-08-20 17:50:26.187 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 89.4278ms
+2024-08-20 17:50:26.359 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-08-20 17:50:26.678 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 320.4489ms
+2024-08-20 17:59:57.640 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-20 17:59:59.371 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-08-20 17:59:59.373 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-08-20 17:59:59.375 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-08-20 17:59:59.377 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-08-20 17:59:59.378 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-08-20 18:00:02.321 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-08-20 18:00:02.721 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 404.2231ms
+2024-08-20 18:00:02.766 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-08-20 18:00:02.766 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-08-20 18:00:02.782 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 16.4171ms
+2024-08-20 18:00:02.821 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 55.2257ms
+2024-08-20 18:00:04.276 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-08-20 18:00:04.535 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 259.9003ms
+2024-08-20 18:03:53.457 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "http"://"localhost:5080""""/JobPlatform/User/admin/register""" - "application/json" 131
+2024-08-20 18:03:53.476 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "http"://"localhost:5080""""/JobPlatform/User/admin/register""" - 307 0 null 19.0097ms
+2024-08-20 18:04:06.943 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "http"://"localhost:5080""""/JobPlatform/User/admin/register""" - "application/json" 131
+2024-08-20 18:04:06.948 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "http"://"localhost:5080""""/JobPlatform/User/admin/register""" - 307 0 null 5.3403ms
+2024-08-20 18:04:06.956 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/JobPlatform/User/admin/register""" - "application/json" 131
+2024-08-20 18:04:06.961 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/JobPlatform/User/admin/register""" - 404 0 null 4.6407ms
+2024-08-20 18:04:06.965 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request reached the end of the middleware pipeline without being handled by application code. Request path: "POST" "https"://"localhost:7044""""/JobPlatform/User/admin/register", Response status code: 404
+2024-08-20 18:04:52.753 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5080""""/JobPlatform/User""" - "application/json" 131
+2024-08-20 18:04:52.756 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5080""""/JobPlatform/User""" - 307 0 null 4.3389ms
+2024-08-20 18:04:52.761 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/JobPlatform/User""" - "application/json" 131
+2024-08-20 18:04:52.764 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/JobPlatform/User""" - 404 0 null 3.8219ms
+2024-08-20 18:04:52.766 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7044""""/JobPlatform/User", Response status code: 404
+2024-08-20 18:05:35.943 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5080""""/JobPlatform/User""" - "application/json" 131
+2024-08-20 18:05:35.946 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5080""""/JobPlatform/User""" - 307 0 null 5.1723ms
+2024-08-20 18:05:35.951 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/JobPlatform/User""" - "application/json" 131
+2024-08-20 18:05:35.958 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/JobPlatform/User""" - 404 0 null 8.1397ms
+2024-08-20 18:05:35.961 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7044""""/JobPlatform/User", Response status code: 404
+2024-08-20 18:06:04.443 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5080""""/JobPlatform/Users""" - "application/json" 131
+2024-08-20 18:06:04.446 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5080""""/JobPlatform/Users""" - 307 0 null 5.1797ms
+2024-08-20 18:06:04.450 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/JobPlatform/Users""" - "application/json" 131
+2024-08-20 18:06:04.453 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/JobPlatform/Users""" - 404 0 null 3.1794ms
+2024-08-20 18:06:04.455 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7044""""/JobPlatform/Users", Response status code: 404
+2024-08-20 18:09:16.972 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5080""""/User""" - "application/json" 131
+2024-08-20 18:09:16.975 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5080""""/User""" - 307 0 null 3.0153ms
+2024-08-20 18:09:17.002 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/User""" - "application/json" 131
+2024-08-20 18:09:17.006 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/User""" - 404 0 null 3.876ms
+2024-08-20 18:09:17.008 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7044""""/User", Response status code: 404
+2024-08-20 18:10:09.372 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/User""" - "application/json" 131
+2024-08-20 18:10:09.379 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/User""" - 404 0 null 39.886ms
+2024-08-20 18:10:09.393 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7044""""/User", Response status code: 404
+2024-08-20 18:10:23.268 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/JobPlatform/User""" - "application/json" 131
+2024-08-20 18:10:23.272 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/JobPlatform/User""" - 404 0 null 4.2368ms
+2024-08-20 18:10:23.275 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7044""""/JobPlatform/User", Response status code: 404
+2024-08-20 18:11:49.686 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User""" - "application/json" 131
+2024-08-20 18:11:49.702 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.GetUsers (JobPlatform)"'
+2024-08-20 18:11:49.736 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetUsers\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.User.UserViewDTO]]] GetUsers(System.String)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:11:50.163 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.GetUsers (JobPlatform)" in 419.0376ms
+2024-08-20 18:11:50.223 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.GetUsers (JobPlatform)"'
+2024-08-20 18:11:50.300 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'JobPlatform.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-20 18:11:50.328 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User""" - 500 null "text/plain; charset=utf-8" 675.4253ms
+2024-08-20 18:18:16.317 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-20 18:18:16.525 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-08-20 18:18:16.525 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-08-20 18:18:16.527 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-08-20 18:18:16.528 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-08-20 18:18:16.528 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-08-20 18:18:18.475 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-08-20 18:18:18.734 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 266.4603ms
+2024-08-20 18:18:18.734 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-08-20 18:18:18.744 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 9.8619ms
+2024-08-20 18:18:18.751 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-08-20 18:18:18.797 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 46.5948ms
+2024-08-20 18:18:18.840 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-08-20 18:18:19.028 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 187.8922ms
+2024-08-20 18:18:22.135 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User""" - "application/json" 131
+2024-08-20 18:18:22.145 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.GetUsers (JobPlatform)"'
+2024-08-20 18:18:22.164 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetUsers\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.User.UserViewDTO]]] GetUsers(System.String)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:18:22.614 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.GetUsers (JobPlatform)" in 438.441ms
+2024-08-20 18:18:22.652 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.GetUsers (JobPlatform)"'
+2024-08-20 18:18:22.677 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "GET" "/api/User" responded 500 in 534.1255 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'JobPlatform.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-08-20 18:18:22.776 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'JobPlatform.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-20 18:18:22.791 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User""" - 500 null "text/plain; charset=utf-8" 656.0348ms
+2024-08-20 18:26:50.296 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-20 18:26:50.486 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-08-20 18:26:50.487 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-08-20 18:26:50.489 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-08-20 18:26:50.490 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-08-20 18:26:50.490 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-08-20 18:26:51.024 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-08-20 18:26:51.277 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 257.8635ms
+2024-08-20 18:26:51.285 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-08-20 18:26:51.292 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 7.1782ms
+2024-08-20 18:26:51.298 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-08-20 18:26:51.335 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 37.9589ms
+2024-08-20 18:26:51.377 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-08-20 18:26:51.508 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 131.0001ms
+2024-08-20 18:26:57.462 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User""" - "application/json" 131
+2024-08-20 18:26:57.473 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.GetUsers (JobPlatform)"'
+2024-08-20 18:26:57.500 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetUsers\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.User.UserViewDTO]]] GetUsers(System.String)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:26:57.880 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.GetUsers (JobPlatform)" in 375.126ms
+2024-08-20 18:26:57.914 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.GetUsers (JobPlatform)"'
+2024-08-20 18:26:57.938 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "GET" "/api/User" responded 500 in 466.2439 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'JobPlatform.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-08-20 18:26:58.021 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'JobPlatform.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-20 18:26:58.035 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User""" - 500 null "text/plain; charset=utf-8" 573.7595ms
+2024-08-20 18:28:37.954 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-20 18:28:38.126 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-08-20 18:28:38.127 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-08-20 18:28:38.129 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-08-20 18:28:38.130 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-08-20 18:28:38.130 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-08-20 18:28:46.249 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-08-20 18:28:46.250 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User""" - "application/json" 131
+2024-08-20 18:28:46.413 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.GetUsers (JobPlatform)"'
+2024-08-20 18:28:46.442 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetUsers\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.User.UserViewDTO]]] GetUsers(System.String)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:28:46.530 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-08-20 18:28:46.531 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 287.5107ms
+2024-08-20 18:28:46.538 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 8.4177ms
+2024-08-20 18:28:46.545 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-08-20 18:28:46.595 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 50.0015ms
+2024-08-20 18:28:46.640 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-08-20 18:28:46.968 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 327.9319ms
+2024-08-20 18:28:48.608 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("85"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]"
+2024-08-20 18:28:48.691 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JobPlatform.DTO.User.UserViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-08-20 18:28:48.713 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.GetUsers (JobPlatform)" in 2263.5594ms
+2024-08-20 18:28:48.717 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.GetUsers (JobPlatform)"'
+2024-08-20 18:28:48.721 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/User" responded 200 in 2308.8544 ms
+2024-08-20 18:28:48.730 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User""" - 200 null "application/json; charset=utf-8" 2486.8626ms
+2024-08-20 18:30:26.652 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-20 18:30:26.814 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-08-20 18:30:26.815 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-08-20 18:30:26.816 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-08-20 18:30:26.817 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-08-20 18:30:26.817 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-08-20 18:30:31.799 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-08-20 18:30:32.109 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-08-20 18:30:32.110 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 315.3262ms
+2024-08-20 18:30:32.119 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 10.8676ms
+2024-08-20 18:30:32.126 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-08-20 18:30:32.162 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 36.3453ms
+2024-08-20 18:30:32.203 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-08-20 18:30:32.401 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 198.0014ms
+2024-08-20 18:30:45.710 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/admin/register""" - "application/json" 131
+2024-08-20 18:30:45.719 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)"'
+2024-08-20 18:30:45.742 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"RegisterInternalUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] RegisterInternalUser(JobPlatform.DTO.User.UserRegisterDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:30:46.166 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2024-08-20 18:30:46.188 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)" in 441.774ms
+2024-08-20 18:30:46.189 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)"'
+2024-08-20 18:30:46.191 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/admin/register" responded 400 in 473.0965 ms
+2024-08-20 18:30:46.194 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/admin/register""" - 400 null "application/problem+json; charset=utf-8" 483.8542ms
+2024-08-20 18:30:58.076 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/admin/register""" - "application/json" 130
+2024-08-20 18:30:58.080 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)"'
+2024-08-20 18:30:58.081 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"RegisterInternalUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] RegisterInternalUser(JobPlatform.DTO.User.UserRegisterDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:30:58.093 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2024-08-20 18:30:58.095 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)" in 12.1918ms
+2024-08-20 18:30:58.096 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)"'
+2024-08-20 18:30:58.097 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/admin/register" responded 400 in 17.5280 ms
+2024-08-20 18:30:58.100 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/admin/register""" - 400 null "application/problem+json; charset=utf-8" 24.2921ms
+2024-08-20 18:31:41.528 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/admin/register""" - "application/json" 134
+2024-08-20 18:31:41.534 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)"'
+2024-08-20 18:31:41.536 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"RegisterInternalUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] RegisterInternalUser(JobPlatform.DTO.User.UserRegisterDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:31:43.142 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("73"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]
+WHERE [u].[USERNAME] = @__username_0"
+2024-08-20 18:31:43.448 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)" in 1909.9958ms
+2024-08-20 18:31:43.514 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)"'
+2024-08-20 18:31:43.570 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "POST" "/api/User/admin/register" responded 500 in 2035.9229 ms
+JobPlatform.Exceptions.EntityNotFoundException: The requested user wasn't found
+   at JobPlatform.Services.UserService.GetByUsername(String username) in C:\Users\kolyv\source\repos\JobPlatform\JobPlatform\Services\UserService.cs:line 110
+   at JobPlatform.Controllers.UserController.Register(UserRegisterDTO registerDTO, Boolean isClient) in C:\Users\kolyv\source\repos\JobPlatform\JobPlatform\Controllers\UserController.cs:line 173
+   at JobPlatform.Controllers.UserController.RegisterInternalUser(UserRegisterDTO registerDTO) in C:\Users\kolyv\source\repos\JobPlatform\JobPlatform\Controllers\UserController.cs:line 212
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-08-20 18:31:43.787 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+JobPlatform.Exceptions.EntityNotFoundException: The requested user wasn't found
+   at JobPlatform.Services.UserService.GetByUsername(String username) in C:\Users\kolyv\source\repos\JobPlatform\JobPlatform\Services\UserService.cs:line 110
+   at JobPlatform.Controllers.UserController.Register(UserRegisterDTO registerDTO, Boolean isClient) in C:\Users\kolyv\source\repos\JobPlatform\JobPlatform\Controllers\UserController.cs:line 173
+   at JobPlatform.Controllers.UserController.RegisterInternalUser(UserRegisterDTO registerDTO) in C:\Users\kolyv\source\repos\JobPlatform\JobPlatform\Controllers\UserController.cs:line 212
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-20 18:31:43.804 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/admin/register""" - 500 null "text/plain; charset=utf-8" 2276.0861ms
+2024-08-20 18:34:00.451 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/admin/register""" - "application/json" 134
+2024-08-20 18:34:00.460 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)"'
+2024-08-20 18:34:00.461 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"RegisterInternalUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] RegisterInternalUser(JobPlatform.DTO.User.UserRegisterDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:34:00.540 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("6"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]
+WHERE [u].[USERNAME] = @__username_0"
+2024-08-20 18:34:00.800 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)" in 337.1368ms
+2024-08-20 18:34:00.863 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)"'
+2024-08-20 18:34:00.906 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Error] HTTP "POST" "/api/User/admin/register" responded 500 in 445.4743 ms
+JobPlatform.Exceptions.EntityNotFoundException: The requested user wasn't found
+   at JobPlatform.Services.UserService.GetByUsername(String username) in C:\Users\kolyv\source\repos\JobPlatform\JobPlatform\Services\UserService.cs:line 110
+   at JobPlatform.Controllers.UserController.Register(UserRegisterDTO registerDTO, Boolean isClient) in C:\Users\kolyv\source\repos\JobPlatform\JobPlatform\Controllers\UserController.cs:line 173
+   at JobPlatform.Controllers.UserController.RegisterInternalUser(UserRegisterDTO registerDTO) in C:\Users\kolyv\source\repos\JobPlatform\JobPlatform\Controllers\UserController.cs:line 212
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-08-20 18:34:01.060 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+JobPlatform.Exceptions.EntityNotFoundException: The requested user wasn't found
+   at JobPlatform.Services.UserService.GetByUsername(String username) in C:\Users\kolyv\source\repos\JobPlatform\JobPlatform\Services\UserService.cs:line 110
+   at JobPlatform.Controllers.UserController.Register(UserRegisterDTO registerDTO, Boolean isClient) in C:\Users\kolyv\source\repos\JobPlatform\JobPlatform\Controllers\UserController.cs:line 173
+   at JobPlatform.Controllers.UserController.RegisterInternalUser(UserRegisterDTO registerDTO) in C:\Users\kolyv\source\repos\JobPlatform\JobPlatform\Controllers\UserController.cs:line 212
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-20 18:34:01.079 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/admin/register""" - 500 null "text/plain; charset=utf-8" 627.8401ms
+2024-08-20 18:39:30.769 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-20 18:39:30.942 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:7044"
+2024-08-20 18:39:30.943 +03:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5080"
+2024-08-20 18:39:30.945 +03:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2024-08-20 18:39:30.946 +03:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2024-08-20 18:39:30.947 +03:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\JobPlatform\JobPlatform"
+2024-08-20 18:39:37.128 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - null null
+2024-08-20 18:39:37.395 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 271.145ms
+2024-08-20 18:39:37.412 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-08-20 18:39:37.412 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - null null
+2024-08-20 18:39:37.422 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 9.7055ms
+2024-08-20 18:39:37.457 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 44.461ms
+2024-08-20 18:39:37.491 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - null null
+2024-08-20 18:39:37.709 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:7044""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 218.2848ms
+2024-08-20 18:39:42.915 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/admin/register""" - "application/json" 134
+2024-08-20 18:39:42.926 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)"'
+2024-08-20 18:39:42.951 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"RegisterInternalUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] RegisterInternalUser(JobPlatform.DTO.User.UserRegisterDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:39:44.773 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("66"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]
+WHERE [u].[USERNAME] = @__username_0"
+2024-08-20 18:39:44.822 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "BadRequestObjectResult", writing value of type '"System.String"'.
+2024-08-20 18:39:44.831 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)" in 1872.4011ms
+2024-08-20 18:39:44.833 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)"'
+2024-08-20 18:39:44.836 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/admin/register" responded 400 in 1912.0289 ms
+2024-08-20 18:39:44.846 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/admin/register""" - 400 null "text/plain; charset=utf-8" 1931.3412ms
+2024-08-20 18:39:56.780 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/admin/register""" - "application/json" 138
+2024-08-20 18:39:56.786 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)"'
+2024-08-20 18:39:56.788 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"RegisterInternalUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] RegisterInternalUser(JobPlatform.DTO.User.UserRegisterDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:39:56.850 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("4"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]
+WHERE [u].[USERNAME] = @__username_0"
+2024-08-20 18:39:57.413 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("18"ms) [Parameters=["@p0='?' (Size = 100), @p1='?' (Size = 255), @p2='?' (Size = 12), @p3='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([EMAIL], [PASSWORD], [ROLE], [USERNAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3);"
+2024-08-20 18:39:57.451 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "CreatedAtActionResult", writing value of type '"JobPlatform.DTO.User.UserViewDTO"'.
+2024-08-20 18:39:57.487 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)" in 697.2596ms
+2024-08-20 18:39:57.488 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.RegisterInternalUser (JobPlatform)"'
+2024-08-20 18:39:57.491 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/admin/register" responded 201 in 704.7832 ms
+2024-08-20 18:39:57.493 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/admin/register""" - 201 null "application/json; charset=utf-8" 712.0575ms
+2024-08-20 18:40:13.056 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/business/register""" - "application/json" 138
+2024-08-20 18:40:13.058 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.RegisterBusinessUser (JobPlatform)"'
+2024-08-20 18:40:13.062 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"RegisterBusinessUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] RegisterBusinessUser(JobPlatform.DTO.User.UserRegisterDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:40:13.077 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("1"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]
+WHERE [u].[USERNAME] = @__username_0"
+2024-08-20 18:40:13.082 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "BadRequestObjectResult", writing value of type '"System.String"'.
+2024-08-20 18:40:13.084 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.RegisterBusinessUser (JobPlatform)" in 20.608ms
+2024-08-20 18:40:13.085 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.RegisterBusinessUser (JobPlatform)"'
+2024-08-20 18:40:13.086 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/business/register" responded 400 in 28.2032 ms
+2024-08-20 18:40:13.087 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/business/register""" - 400 null "text/plain; charset=utf-8" 31.3014ms
+2024-08-20 18:40:24.443 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/business/register""" - "application/json" 133
+2024-08-20 18:40:24.445 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.RegisterBusinessUser (JobPlatform)"'
+2024-08-20 18:40:24.446 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"RegisterBusinessUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] RegisterBusinessUser(JobPlatform.DTO.User.UserRegisterDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:40:24.451 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("2"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]
+WHERE [u].[USERNAME] = @__username_0"
+2024-08-20 18:40:24.655 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 100), @p1='?' (Size = 255), @p2='?' (Size = 12), @p3='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([EMAIL], [PASSWORD], [ROLE], [USERNAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3);"
+2024-08-20 18:40:24.694 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2024-08-20 18:40:24.698 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.RegisterBusinessUser (JobPlatform)" in 250.4415ms
+2024-08-20 18:40:24.698 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.RegisterBusinessUser (JobPlatform)"'
+2024-08-20 18:40:24.699 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/business/register" responded 200 in 254.2078 ms
+2024-08-20 18:40:24.702 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/business/register""" - 200 null "application/json; charset=utf-8" 259.5075ms
+2024-08-20 18:41:16.145 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/applicant/register""" - "application/json" 146
+2024-08-20 18:41:16.147 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"405 HTTP Method Not Supported"'
+2024-08-20 18:41:16.148 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"405 HTTP Method Not Supported"'
+2024-08-20 18:41:16.149 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/User/applicant/register" responded 405 in 2.0036 ms
+2024-08-20 18:41:16.151 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/applicant/register""" - 405 0 null 5.9866ms
+2024-08-20 18:42:16.883 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/applicant/register""" - "application/json" 146
+2024-08-20 18:42:16.889 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.RegisterApplicantUser (JobPlatform)"'
+2024-08-20 18:42:16.893 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"RegisterApplicantUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] RegisterApplicantUser(JobPlatform.DTO.User.UserRegisterDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:42:16.907 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("9"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]
+WHERE [u].[USERNAME] = @__username_0"
+2024-08-20 18:42:17.099 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (Size = 100), @p1='?' (Size = 255), @p2='?' (Size = 12), @p3='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([EMAIL], [PASSWORD], [ROLE], [USERNAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3);"
+2024-08-20 18:42:17.104 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2024-08-20 18:42:17.105 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.RegisterApplicantUser (JobPlatform)" in 209.9235ms
+2024-08-20 18:42:17.106 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.RegisterApplicantUser (JobPlatform)"'
+2024-08-20 18:42:17.106 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/applicant/register" responded 200 in 217.5608 ms
+2024-08-20 18:42:17.107 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/applicant/register""" - 200 null "application/json; charset=utf-8" 225.0837ms
+2024-08-20 18:46:14.946 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/current""" - "application/json" 146
+2024-08-20 18:46:15.006 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"405 HTTP Method Not Supported"'
+2024-08-20 18:46:15.008 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"405 HTTP Method Not Supported"'
+2024-08-20 18:46:15.009 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/current" responded 405 in 2.9498 ms
+2024-08-20 18:46:15.012 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/current""" - 405 0 null 66.0333ms
+2024-08-20 18:46:23.798 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User/current""" - "application/json" 146
+2024-08-20 18:46:23.801 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.GetCurrentUser (JobPlatform)"'
+2024-08-20 18:46:23.805 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetCurrentUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] GetCurrentUser()" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:46:23.853 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]
+WHERE [u].[ID] = @__p_0"
+2024-08-20 18:46:23.855 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.User.UserViewDTO"'.
+2024-08-20 18:46:23.856 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.GetCurrentUser (JobPlatform)" in 49.258ms
+2024-08-20 18:46:23.857 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.GetCurrentUser (JobPlatform)"'
+2024-08-20 18:46:23.857 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/User/current" responded 200 in 56.6633 ms
+2024-08-20 18:46:23.858 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User/current""" - 200 null "application/json; charset=utf-8" 60.1825ms
+2024-08-20 18:47:01.847 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User/1""" - "application/json" 146
+2024-08-20 18:47:01.874 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.GetOne (JobPlatform)"'
+2024-08-20 18:47:01.879 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetOne\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] GetOne(Int64)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:47:01.892 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]
+WHERE [u].[ID] = @__p_0"
+2024-08-20 18:47:01.895 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.User.UserViewDTO"'.
+2024-08-20 18:47:01.896 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.GetOne (JobPlatform)" in 15.8616ms
+2024-08-20 18:47:01.897 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.GetOne (JobPlatform)"'
+2024-08-20 18:47:01.898 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/User/1" responded 200 in 23.8825 ms
+2024-08-20 18:47:01.899 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User/1""" - 200 null "application/json; charset=utf-8" 52.9802ms
+2024-08-20 18:47:07.451 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User/7""" - "application/json" 146
+2024-08-20 18:47:07.454 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.GetOne (JobPlatform)"'
+2024-08-20 18:47:07.455 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetOne\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] GetOne(Int64)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:47:07.463 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]
+WHERE [u].[ID] = @__p_0"
+2024-08-20 18:47:07.536 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "NotFoundObjectResult", writing value of type '"System.String"'.
+2024-08-20 18:47:07.538 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.GetOne (JobPlatform)" in 81.5787ms
+2024-08-20 18:47:07.539 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.GetOne (JobPlatform)"'
+2024-08-20 18:47:07.540 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/User/7" responded 404 in 85.7987 ms
+2024-08-20 18:47:07.541 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User/7""" - 404 null "text/plain; charset=utf-8" 89.9939ms
+2024-08-20 18:49:47.570 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/email""" - "application/json" 83
+2024-08-20 18:49:47.573 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/email" responded 404 in 0.1737 ms
+2024-08-20 18:49:47.575 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/email""" - 404 0 null 4.1727ms
+2024-08-20 18:49:47.581 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request reached the end of the middleware pipeline without being handled by application code. Request path: "PUT" "https"://"localhost:7044""""/api/email", Response status code: 404
+2024-08-20 18:49:59.863 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/email""" - "application/json" 83
+2024-08-20 18:49:59.867 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)"'
+2024-08-20 18:49:59.873 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"ChangeEmail\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] ChangeEmail(JobPlatform.DTO.User.UserChangeEmailDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:49:59.880 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2024-08-20 18:49:59.890 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)" in 15.7243ms
+2024-08-20 18:49:59.891 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)"'
+2024-08-20 18:49:59.891 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/User/email" responded 401 in 24.6877 ms
+2024-08-20 18:49:59.892 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/email""" - 401 null "application/problem+json; charset=utf-8" 28.9745ms
+2024-08-20 18:50:13.001 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/email""" - "application/json" 83
+2024-08-20 18:50:13.004 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)"'
+2024-08-20 18:50:13.005 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"ChangeEmail\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] ChangeEmail(JobPlatform.DTO.User.UserChangeEmailDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:50:13.007 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2024-08-20 18:50:13.008 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)" in 1.9883ms
+2024-08-20 18:50:13.009 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)"'
+2024-08-20 18:50:13.010 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/User/email" responded 401 in 6.0762 ms
+2024-08-20 18:50:13.011 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/email""" - 401 null "application/problem+json; charset=utf-8" 10.0739ms
+2024-08-20 18:50:57.958 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/login""" - "application/json" 76
+2024-08-20 18:50:57.964 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.Login (JobPlatform)"'
+2024-08-20 18:50:57.971 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPlatform.DTO.User.UserLoginDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:50:57.982 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("4"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]
+WHERE [u].[USERNAME] = @__username_0"
+2024-08-20 18:50:58.164 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2024-08-20 18:50:58.167 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.Login (JobPlatform)" in 194.3101ms
+2024-08-20 18:50:58.169 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.Login (JobPlatform)"'
+2024-08-20 18:50:58.170 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/login" responded 200 in 206.2188 ms
+2024-08-20 18:50:58.172 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/login""" - 200 null "application/json; charset=utf-8" 214.303ms
+2024-08-20 18:51:30.013 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/login""" - "application/json" 71
+2024-08-20 18:51:30.020 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"405 HTTP Method Not Supported"'
+2024-08-20 18:51:30.022 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"405 HTTP Method Not Supported"'
+2024-08-20 18:51:30.022 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/User/login" responded 405 in 2.0793 ms
+2024-08-20 18:51:30.024 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/login""" - 405 0 null 11.7201ms
+2024-08-20 18:51:40.829 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/login""" - "application/json" 71
+2024-08-20 18:51:40.831 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.Login (JobPlatform)"'
+2024-08-20 18:51:40.832 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JobPlatform.DTO.User.UserLoginDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:51:40.841 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("6"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]
+WHERE [u].[USERNAME] = @__username_0"
+2024-08-20 18:51:41.012 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2024-08-20 18:51:41.014 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.Login (JobPlatform)" in 180.8736ms
+2024-08-20 18:51:41.015 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.Login (JobPlatform)"'
+2024-08-20 18:51:41.016 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "POST" "/api/User/login" responded 200 in 184.3906 ms
+2024-08-20 18:51:41.017 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7044""""/api/User/login""" - 200 null "application/json; charset=utf-8" 187.6041ms
+2024-08-20 18:52:47.364 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/email""" - "application/json" 81
+2024-08-20 18:52:47.371 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)"'
+2024-08-20 18:52:47.372 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"ChangeEmail\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] ChangeEmail(JobPlatform.DTO.User.UserChangeEmailDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:52:47.374 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2024-08-20 18:52:47.375 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)" in 1.9442ms
+2024-08-20 18:52:47.376 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)"'
+2024-08-20 18:52:47.377 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/User/email" responded 401 in 6.1805 ms
+2024-08-20 18:52:47.379 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/email""" - 401 null "application/problem+json; charset=utf-8" 14.26ms
+2024-08-20 18:54:35.937 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/email""" - "application/json" 89
+2024-08-20 18:54:35.942 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)"'
+2024-08-20 18:54:35.943 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"ChangeEmail\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] ChangeEmail(JobPlatform.DTO.User.UserChangeEmailDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:54:35.952 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]
+WHERE [u].[ID] = @__p_0"
+2024-08-20 18:54:36.160 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("6"ms) [Parameters=["@p4='?' (DbType = Int64), @p0='?' (Size = 100), @p1='?' (Size = 255), @p2='?' (Size = 12), @p3='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [EMAIL] = @p0, [PASSWORD] = @p1, [ROLE] = @p2, [USERNAME] = @p3
+OUTPUT 1
+WHERE [ID] = @p4;"
+2024-08-20 18:54:36.166 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.User.UserViewDTO"'.
+2024-08-20 18:54:36.168 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)" in 224.0281ms
+2024-08-20 18:54:36.170 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)"'
+2024-08-20 18:54:36.170 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/User/email" responded 200 in 228.2998 ms
+2024-08-20 18:54:36.172 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/email""" - 200 null "application/json; charset=utf-8" 236.1119ms
+2024-08-20 18:57:33.122 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/email""" - "application/json" 123
+2024-08-20 18:57:33.126 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)"'
+2024-08-20 18:57:33.127 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"ChangeEmail\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] ChangeEmail(JobPlatform.DTO.User.UserChangeEmailDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:57:33.130 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2024-08-20 18:57:33.135 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)" in 6.4079ms
+2024-08-20 18:57:33.136 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.ChangeEmail (JobPlatform)"'
+2024-08-20 18:57:33.136 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/User/email" responded 400 in 10.4371 ms
+2024-08-20 18:57:33.138 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/email""" - 400 null "application/problem+json; charset=utf-8" 18.0822ms
+2024-08-20 18:57:47.531 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/password""" - "application/json" 123
+2024-08-20 18:57:47.533 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.ChangePassword (JobPlatform)"'
+2024-08-20 18:57:47.539 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"ChangePassword\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] ChangePassword(JobPlatform.DTO.User.UserChangePasswordDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:57:47.545 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+2024-08-20 18:57:47.547 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.ChangePassword (JobPlatform)" in 7.3544ms
+2024-08-20 18:57:47.549 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.ChangePassword (JobPlatform)"'
+2024-08-20 18:57:47.549 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/User/password" responded 400 in 15.8802 ms
+2024-08-20 18:57:47.550 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/password""" - 400 null "application/problem+json; charset=utf-8" 19.5524ms
+2024-08-20 18:58:13.114 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/password""" - "application/json" 123
+2024-08-20 18:58:13.118 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.ChangePassword (JobPlatform)"'
+2024-08-20 18:58:13.119 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"ChangePassword\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] ChangePassword(JobPlatform.DTO.User.UserChangePasswordDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:58:13.123 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "BadRequestObjectResult", writing value of type '"System.String"'.
+2024-08-20 18:58:13.124 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.ChangePassword (JobPlatform)" in 3.1707ms
+2024-08-20 18:58:13.132 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.ChangePassword (JobPlatform)"'
+2024-08-20 18:58:13.132 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/User/password" responded 400 in 14.5907 ms
+2024-08-20 18:58:13.135 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/password""" - 400 null "text/plain; charset=utf-8" 20.2159ms
+2024-08-20 18:58:23.740 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/password""" - "application/json" 123
+2024-08-20 18:58:23.744 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.ChangePassword (JobPlatform)"'
+2024-08-20 18:58:23.745 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"ChangePassword\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] ChangePassword(JobPlatform.DTO.User.UserChangePasswordDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:58:23.748 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "ObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2024-08-20 18:58:23.750 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.ChangePassword (JobPlatform)" in 3.2323ms
+2024-08-20 18:58:23.751 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.ChangePassword (JobPlatform)"'
+2024-08-20 18:58:23.752 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/User/password" responded 401 in 8.1097 ms
+2024-08-20 18:58:23.753 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/password""" - 401 null "application/problem+json; charset=utf-8" 12.9251ms
+2024-08-20 18:58:31.246 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/password""" - "application/json" 123
+2024-08-20 18:58:31.248 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.ChangePassword (JobPlatform)"'
+2024-08-20 18:58:31.249 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"ChangePassword\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[JobPlatform.DTO.User.UserViewDTO]] ChangePassword(JobPlatform.DTO.User.UserChangePasswordDTO)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:58:31.258 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]
+WHERE [u].[ID] = @__p_0"
+2024-08-20 18:58:31.641 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("7"ms) [Parameters=["@p4='?' (DbType = Int64), @p0='?' (Size = 100), @p1='?' (Size = 255), @p2='?' (Size = 12), @p3='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [EMAIL] = @p0, [PASSWORD] = @p1, [ROLE] = @p2, [USERNAME] = @p3
+OUTPUT 1
+WHERE [ID] = @p4;"
+2024-08-20 18:58:31.646 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"JobPlatform.DTO.User.UserViewDTO"'.
+2024-08-20 18:58:31.648 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.ChangePassword (JobPlatform)" in 397.8408ms
+2024-08-20 18:58:31.649 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.ChangePassword (JobPlatform)"'
+2024-08-20 18:58:31.651 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "PUT" "/api/User/password" responded 200 in 402.8233 ms
+2024-08-20 18:58:31.652 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "PUT" "https"://"localhost:7044""""/api/User/password""" - 200 null "application/json; charset=utf-8" 406.3218ms
+2024-08-20 18:58:48.475 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User/""" - "application/json" 123
+2024-08-20 18:58:48.477 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executing endpoint '"JobPlatform.Controllers.UserController.GetUsers (JobPlatform)"'
+2024-08-20 18:58:48.480 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Route matched with "{action = \"GetUsers\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[JobPlatform.DTO.User.UserViewDTO]]] GetUsers(System.String)" on controller "JobPlatform.Controllers.UserController" ("JobPlatform").
+2024-08-20 18:58:48.497 +03:00 Microsoft.EntityFrameworkCore.Database.Command[Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[ID], [u].[EMAIL], [u].[PASSWORD], [u].[ROLE], [u].[USERNAME]
+FROM [Users] AS [u]"
+2024-08-20 18:58:48.511 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[Information] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[JobPlatform.DTO.User.UserViewDTO, JobPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-08-20 18:58:48.512 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[Information] Executed action "JobPlatform.Controllers.UserController.GetUsers (JobPlatform)" in 30.8221ms
+2024-08-20 18:58:48.513 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware[Information] Executed endpoint '"JobPlatform.Controllers.UserController.GetUsers (JobPlatform)"'
+2024-08-20 18:58:48.514 +03:00 Serilog.AspNetCore.RequestLoggingMiddleware[Information] HTTP "GET" "/api/User/" responded 200 in 36.9791 ms
+2024-08-20 18:58:48.515 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/1.1" "GET" "https"://"localhost:7044""""/api/User/""" - 200 null "application/json; charset=utf-8" 40.079ms
